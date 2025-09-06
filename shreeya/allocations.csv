@@ -1,0 +1,251 @@
+student_id,student_name,org_id,org_name,score,gpa,reason,gender,status
+S036,Avni,O001,TechNova,0.7692,8.9,"Degree matched; Skills matched: ML, Python; Location matched",F,Allocated
+S001,Aditi,O001,TechNova,0.7692,8.2,"Degree matched; Skills matched: ML, Python; Location matched",F,Allocated
+S014,Nikhil,O001,TechNova,0.6154,9.2,"Degree matched; Skills matched: AI, ML; Location not matched",M,Allocated
+S047,Aryan,O001,TechNova,0.6154,9.1,"Degree matched; Skills matched: AI, ML; Location not matched",M,Not Allocated
+S028,Aditya,O001,TechNova,0.6154,8.9,"Degree matched; Skills matched: AI, ML; Location not matched",M,Not Allocated
+S041,Ira,O001,TechNova,0.6154,8.6,"Degree matched; Skills matched: AI, Python; Location not matched",F,Not Allocated
+S043,Dhruv,O001,TechNova,0.5538,9.0,"Degree not matched; Skills matched: AI, ML; Location matched; Past participation penalized",M,Not Allocated
+S050,Tarun,O001,TechNova,0.5385,8.5,Degree matched; Skills matched: Python; Location matched,M,Not Allocated
+S022,Akash,O001,TechNova,0.5385,8.4,Degree matched; Skills matched: Python; Location matched,M,Not Allocated
+S019,Divya,O001,TechNova,0.4615,8.9,"Degree not matched; Skills matched: ML, Python; Location not matched",F,Not Allocated
+S033,Dev,O001,TechNova,0.4615,8.8,"Degree not matched; Skills matched: ML, Python; Location not matched",M,Not Allocated
+S023,Tanya,O001,TechNova,0.4615,8.5,"Degree not matched; Skills matched: ML, Python; Location not matched",F,Not Allocated
+S004,Karan,O001,TechNova,0.4154,9.1,"Degree not matched; Skills matched: AI, ML; Location not matched; Past participation penalized",M,Not Allocated
+S009,Ananya,O001,TechNova,0.4154,9.0,"Degree not matched; Skills matched: ML, Python; Location not matched; Past participation penalized",F,Not Allocated
+S029,Sneha,O001,TechNova,0.3846,9.1,Degree not matched; Skills matched: Python; Location matched,F,Not Allocated
+S007,Simran,O001,TechNova,0.3846,8.7,Degree matched; Skills matched: Python; Location not matched,F,Not Allocated
+S034,Maya,O001,TechNova,0.3846,8.4,Degree matched; Skills matched: AI; Location not matched,F,Not Allocated
+S010,Rohit,O001,TechNova,0.3846,8.3,Degree matched; Skills matched: AI; Location not matched,M,Not Allocated
+S045,Raman,O001,TechNova,0.3846,8.3,Degree matched; Skills matched: Python; Location not matched,M,Not Allocated
+S026,Yash,O001,TechNova,0.3846,8.2,Degree matched; Skills matched: Python; Location not matched,M,Not Allocated
+S020,Aman,O001,TechNova,0.3846,8.0,Degree matched; Skills matched: AI; Location not matched,M,Not Allocated
+S016,Kabir,O001,TechNova,0.3462,8.8,Degree matched; Skills matched: Python; Location not matched; Past participation penalized,M,Not Allocated
+S003,Priya,O001,TechNova,0.2308,8.9,Degree not matched; Skills matched: Python; Location not matched,F,Not Allocated
+S038,Radhika,O001,TechNova,0.2308,8.8,Degree not matched; Skills matched: Python; Location not matched,F,Not Allocated
+S042,Laksh,O001,TechNova,0.2308,8.5,Degree not matched; Skills matched: Python; Location not matched,M,Not Allocated
+S037,Parth,O001,TechNova,0.2077,9.2,Degree not matched; Skills matched: AI; Location not matched; Past participation penalized,M,Not Allocated
+S024,Varun,O001,TechNova,0.2077,9.0,Degree not matched; Skills matched: AI; Location not matched; Past participation penalized,M,Not Allocated
+S032,Anjali,O001,TechNova,0.2077,8.7,Degree not matched; Skills matched: Python; Location not matched; Past participation penalized,F,Not Allocated
+S048,Gaurav,O001,TechNova,0.2077,8.7,Degree not matched; Skills matched: Python; Location not matched; Past participation penalized,M,Not Allocated
+S013,Meera,O001,TechNova,0.2077,8.6,Degree not matched; Skills matched: Python; Location not matched; Past participation penalized,F,Not Allocated
+S011,Ishita,O001,TechNova,0.2077,8.5,Degree not matched; Skills matched: Python; Location not matched; Past participation penalized,F,Not Allocated
+S031,Harsh,O001,TechNova,0.1538,8.3,Degree matched; No skill overlap; Location not matched,M,Not Allocated
+S015,Shreya,O001,TechNova,0.1538,7.4,Degree not matched; No skill overlap; Location matched,F,Not Allocated
+S008,Vivek,O001,TechNova,0.1538,7.2,Degree not matched; No skill overlap; Location matched,M,Not Allocated
+S027,Rajesh,O001,TechNova,0.0,8.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S006,Arjun,O001,TechNova,0.0,8.4,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S046,Suresh,O001,TechNova,0.0,8.4,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S017,Pooja,O001,TechNova,0.0,8.1,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S039,Samir,O001,TechNova,0.0,8.1,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S049,Vani,O001,TechNova,0.0,7.9,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S012,Sahil,O001,TechNova,0.0,7.9,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S005,Neha,O001,TechNova,0.0,7.8,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S044,Amit,O001,TechNova,0.0,7.8,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S025,Sanya,O001,TechNova,0.0,7.7,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S040,Vikram,O001,TechNova,0.0,7.7,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S035,Kunal,O001,TechNova,0.0,7.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S018,Manav,O001,TechNova,0.0,7.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S002,Raj,O001,TechNova,0.0,7.5,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S030,Rakesh,O001,TechNova,0.0,7.5,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S021,Riya,O001,TechNova,0.0,7.3,Degree not matched; No skill overlap; Location not matched; Past participation penalized,F,Not Allocated
+S021,Riya,O002,FinCorp,0.7615,7.3,"Degree matched; Skills matched: Excel, Finance, Stats; Location not matched; Past participation penalized",F,Allocated
+S015,Shreya,O002,FinCorp,0.6154,7.4,"Degree matched; Skills matched: Excel, Finance; Location not matched",F,Allocated
+S049,Vani,O002,FinCorp,0.4615,7.9,"Degree not matched; Skills matched: Excel, Finance; Location not matched",F,Allocated
+S002,Raj,O002,FinCorp,0.9,7.5,"Degree matched; Skills matched: Excel, Finance, Stats; Location matched; Past participation penalized",M,Allocated
+S008,Vivek,O002,FinCorp,0.8462,7.2,"Degree matched; Skills matched: Excel, Finance, Stats; Location not matched",M,Allocated
+S030,Rakesh,O002,FinCorp,0.6923,7.5,"Degree matched; Skills matched: Excel, Finance; Location matched; Past participation penalized",M,Allocated
+S044,Amit,O002,FinCorp,0.6154,7.8,"Degree not matched; Skills matched: Excel, Finance; Location matched",M,Allocated
+S012,Sahil,O002,FinCorp,0.4615,7.9,"Degree not matched; Skills matched: Excel, Finance; Location not matched",M,Allocated
+S005,Neha,O002,FinCorp,0.4615,7.8,"Degree not matched; Skills matched: Excel, Finance; Location not matched",F,Allocated
+S025,Sanya,O002,FinCorp,0.4615,7.7,"Degree not matched; Skills matched: Excel, Finance; Location not matched",F,Allocated
+S040,Vikram,O002,FinCorp,0.4154,7.7,"Degree not matched; Skills matched: Excel, Finance; Location not matched; Past participation penalized",M,Allocated
+S035,Kunal,O002,FinCorp,0.4154,7.6,"Degree not matched; Skills matched: Excel, Finance; Location not matched; Past participation penalized",M,Not Allocated
+S018,Manav,O002,FinCorp,0.4154,7.6,"Degree not matched; Skills matched: Excel, Finance; Location not matched; Past participation penalized",M,Not Allocated
+S029,Sneha,O002,FinCorp,0.2308,9.1,Degree not matched; Skills matched: Stats; Location not matched,F,Not Allocated
+S003,Priya,O002,FinCorp,0.2308,8.9,Degree not matched; Skills matched: Excel; Location not matched,F,Not Allocated
+S038,Radhika,O002,FinCorp,0.2308,8.8,Degree not matched; Skills matched: Stats; Location not matched,F,Not Allocated
+S042,Laksh,O002,FinCorp,0.2308,8.5,Degree not matched; Skills matched: Stats; Location not matched,M,Not Allocated
+S048,Gaurav,O002,FinCorp,0.2077,8.7,Degree not matched; Skills matched: Stats; Location not matched; Past participation penalized,M,Not Allocated
+S013,Meera,O002,FinCorp,0.2077,8.6,Degree not matched; Skills matched: Stats; Location not matched; Past participation penalized,F,Not Allocated
+S023,Tanya,O002,FinCorp,0.1538,8.5,Degree not matched; No skill overlap; Location matched,F,Not Allocated
+S037,Parth,O002,FinCorp,0.1385,9.2,Degree not matched; No skill overlap; Location matched; Past participation penalized,M,Not Allocated
+S009,Ananya,O002,FinCorp,0.1385,9.0,Degree not matched; No skill overlap; Location matched; Past participation penalized,F,Not Allocated
+S016,Kabir,O002,FinCorp,0.1385,8.8,Degree not matched; No skill overlap; Location matched; Past participation penalized,M,Not Allocated
+S014,Nikhil,O002,FinCorp,0.0,9.2,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S047,Aryan,O002,FinCorp,0.0,9.1,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S004,Karan,O002,FinCorp,0.0,9.1,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S024,Varun,O002,FinCorp,0.0,9.0,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S043,Dhruv,O002,FinCorp,0.0,9.0,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S028,Aditya,O002,FinCorp,0.0,8.9,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S019,Divya,O002,FinCorp,0.0,8.9,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S036,Avni,O002,FinCorp,0.0,8.9,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S033,Dev,O002,FinCorp,0.0,8.8,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S032,Anjali,O002,FinCorp,0.0,8.7,Degree not matched; No skill overlap; Location not matched; Past participation penalized,F,Not Allocated
+S007,Simran,O002,FinCorp,0.0,8.7,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S027,Rajesh,O002,FinCorp,0.0,8.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S041,Ira,O002,FinCorp,0.0,8.6,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S050,Tarun,O002,FinCorp,0.0,8.5,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S011,Ishita,O002,FinCorp,0.0,8.5,Degree not matched; No skill overlap; Location not matched; Past participation penalized,F,Not Allocated
+S022,Akash,O002,FinCorp,0.0,8.4,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S006,Arjun,O002,FinCorp,0.0,8.4,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S046,Suresh,O002,FinCorp,0.0,8.4,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S034,Maya,O002,FinCorp,0.0,8.4,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S031,Harsh,O002,FinCorp,0.0,8.3,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S010,Rohit,O002,FinCorp,0.0,8.3,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S045,Raman,O002,FinCorp,0.0,8.3,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S026,Yash,O002,FinCorp,0.0,8.2,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S001,Aditi,O002,FinCorp,0.0,8.2,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S039,Samir,O002,FinCorp,0.0,8.1,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S017,Pooja,O002,FinCorp,0.0,8.1,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S020,Aman,O002,FinCorp,0.0,8.0,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S038,Radhika,O003,HealthPlus,1.0,8.8,"Degree matched; Skills matched: Data Analysis, Python, Stats; Location matched",F,Allocated
+S029,Sneha,O003,HealthPlus,0.8462,9.1,"Degree matched; Skills matched: Data Analysis, Python, Stats; Location not matched",F,Allocated
+S042,Laksh,O003,HealthPlus,0.8462,8.5,"Degree matched; Skills matched: Data Analysis, Python, Stats; Location not matched",M,Not Allocated
+S003,Priya,O003,HealthPlus,0.7692,8.9,"Degree matched; Skills matched: Data Analysis, Python; Location matched",F,Not Allocated
+S048,Gaurav,O003,HealthPlus,0.7615,8.7,"Degree matched; Skills matched: Data Analysis, Python, Stats; Location not matched; Past participation penalized",M,Not Allocated
+S013,Meera,O003,HealthPlus,0.7615,8.6,"Degree matched; Skills matched: Data Analysis, Python, Stats; Location not matched; Past participation penalized",F,Not Allocated
+S019,Divya,O003,HealthPlus,0.6154,8.9,"Degree matched; Skills matched: Data Analysis, Python; Location not matched",F,Not Allocated
+S033,Dev,O003,HealthPlus,0.6154,8.8,"Degree matched; Skills matched: Data Analysis, Python; Location not matched",M,Not Allocated
+S023,Tanya,O003,HealthPlus,0.6154,8.5,"Degree matched; Skills matched: Data Analysis, Python; Location not matched",F,Not Allocated
+S009,Ananya,O003,HealthPlus,0.5538,9.0,"Degree matched; Skills matched: Data Analysis, Python; Location not matched; Past participation penalized",F,Not Allocated
+S045,Raman,O003,HealthPlus,0.3846,8.3,Degree not matched; Skills matched: Python; Location matched,M,Not Allocated
+S036,Avni,O003,HealthPlus,0.2308,8.9,Degree not matched; Skills matched: Python; Location not matched,F,Not Allocated
+S007,Simran,O003,HealthPlus,0.2308,8.7,Degree not matched; Skills matched: Python; Location not matched,F,Not Allocated
+S041,Ira,O003,HealthPlus,0.2308,8.6,Degree not matched; Skills matched: Python; Location not matched,F,Not Allocated
+S050,Tarun,O003,HealthPlus,0.2308,8.5,Degree not matched; Skills matched: Python; Location not matched,M,Not Allocated
+S022,Akash,O003,HealthPlus,0.2308,8.4,Degree not matched; Skills matched: Python; Location not matched,M,Not Allocated
+S026,Yash,O003,HealthPlus,0.2308,8.2,Degree not matched; Skills matched: Python; Location not matched,M,Not Allocated
+S001,Aditi,O003,HealthPlus,0.2308,8.2,Degree not matched; Skills matched: Python; Location not matched,F,Not Allocated
+S008,Vivek,O003,HealthPlus,0.2308,7.2,Degree not matched; Skills matched: Stats; Location not matched,M,Not Allocated
+S016,Kabir,O003,HealthPlus,0.2077,8.8,Degree not matched; Skills matched: Python; Location not matched; Past participation penalized,M,Not Allocated
+S032,Anjali,O003,HealthPlus,0.2077,8.7,Degree not matched; Skills matched: Python; Location not matched; Past participation penalized,F,Not Allocated
+S011,Ishita,O003,HealthPlus,0.2077,8.5,Degree not matched; Skills matched: Python; Location not matched; Past participation penalized,F,Not Allocated
+S002,Raj,O003,HealthPlus,0.2077,7.5,Degree not matched; Skills matched: Stats; Location not matched; Past participation penalized,M,Not Allocated
+S021,Riya,O003,HealthPlus,0.2077,7.3,Degree not matched; Skills matched: Stats; Location not matched; Past participation penalized,F,Not Allocated
+S031,Harsh,O003,HealthPlus,0.1538,8.3,Degree not matched; No skill overlap; Location matched,M,Not Allocated
+S010,Rohit,O003,HealthPlus,0.1538,8.3,Degree not matched; No skill overlap; Location matched,M,Not Allocated
+S017,Pooja,O003,HealthPlus,0.1538,8.1,Degree not matched; No skill overlap; Location matched,F,Not Allocated
+S024,Varun,O003,HealthPlus,0.1385,9.0,Degree not matched; No skill overlap; Location matched; Past participation penalized,M,Not Allocated
+S037,Parth,O003,HealthPlus,0.0,9.2,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S014,Nikhil,O003,HealthPlus,0.0,9.2,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S047,Aryan,O003,HealthPlus,0.0,9.1,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S004,Karan,O003,HealthPlus,0.0,9.1,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S043,Dhruv,O003,HealthPlus,0.0,9.0,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S028,Aditya,O003,HealthPlus,0.0,8.9,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S027,Rajesh,O003,HealthPlus,0.0,8.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S034,Maya,O003,HealthPlus,0.0,8.4,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S046,Suresh,O003,HealthPlus,0.0,8.4,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S006,Arjun,O003,HealthPlus,0.0,8.4,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S039,Samir,O003,HealthPlus,0.0,8.1,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S020,Aman,O003,HealthPlus,0.0,8.0,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S012,Sahil,O003,HealthPlus,0.0,7.9,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S049,Vani,O003,HealthPlus,0.0,7.9,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S005,Neha,O003,HealthPlus,0.0,7.8,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S044,Amit,O003,HealthPlus,0.0,7.8,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S040,Vikram,O003,HealthPlus,0.0,7.7,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S025,Sanya,O003,HealthPlus,0.0,7.7,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S035,Kunal,O003,HealthPlus,0.0,7.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S018,Manav,O003,HealthPlus,0.0,7.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S030,Rakesh,O003,HealthPlus,0.0,7.5,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S015,Shreya,O003,HealthPlus,0.0,7.4,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S034,Maya,O004,CloudWorks,0.8462,8.4,"Degree matched; Skills matched: AI, Cloud, Networking; Location not matched",F,Allocated
+S041,Ira,O004,CloudWorks,0.3846,8.6,Degree matched; Skills matched: AI; Location not matched,F,Allocated
+S010,Rohit,O004,CloudWorks,0.8462,8.3,"Degree matched; Skills matched: AI, Cloud, Networking; Location not matched",M,Allocated
+S024,Varun,O004,CloudWorks,0.6231,9.0,"Degree not matched; Skills matched: AI, Cloud, Networking; Location not matched; Past participation penalized",M,Allocated
+S014,Nikhil,O004,CloudWorks,0.6154,9.2,"Degree matched; Skills matched: AI, Cloud; Location not matched",M,Not Allocated
+S047,Aryan,O004,CloudWorks,0.6154,9.1,"Degree matched; Skills matched: AI, Cloud; Location not matched",M,Not Allocated
+S028,Aditya,O004,CloudWorks,0.6154,8.9,"Degree matched; Skills matched: AI, Cloud; Location not matched",M,Not Allocated
+S020,Aman,O004,CloudWorks,0.6154,8.0,"Degree matched; Skills matched: AI, Cloud; Location not matched",M,Not Allocated
+S004,Karan,O004,CloudWorks,0.5538,9.1,"Degree not matched; Skills matched: AI, Cloud; Location matched; Past participation penalized",M,Not Allocated
+S037,Parth,O004,CloudWorks,0.4154,9.2,"Degree not matched; Skills matched: AI, Cloud; Location not matched; Past participation penalized",M,Not Allocated
+S043,Dhruv,O004,CloudWorks,0.4154,9.0,"Degree not matched; Skills matched: AI, Cloud; Location not matched; Past participation penalized",M,Not Allocated
+S039,Samir,O004,CloudWorks,0.3846,8.1,Degree not matched; Skills matched: Networking; Location matched,M,Not Allocated
+S046,Suresh,O004,CloudWorks,0.3462,8.4,Degree not matched; Skills matched: Networking; Location matched; Past participation penalized,M,Not Allocated
+S017,Pooja,O004,CloudWorks,0.2308,8.1,Degree not matched; Skills matched: Networking; Location not matched,F,Not Allocated
+S027,Rajesh,O004,CloudWorks,0.2077,8.6,Degree not matched; Skills matched: Networking; Location not matched; Past participation penalized,M,Not Allocated
+S036,Avni,O004,CloudWorks,0.1538,8.9,Degree matched; No skill overlap; Location not matched,F,Not Allocated
+S007,Simran,O004,CloudWorks,0.1538,8.7,Degree matched; No skill overlap; Location not matched,F,Not Allocated
+S050,Tarun,O004,CloudWorks,0.1538,8.5,Degree matched; No skill overlap; Location not matched,M,Not Allocated
+S022,Akash,O004,CloudWorks,0.1538,8.4,Degree matched; No skill overlap; Location not matched,M,Not Allocated
+S045,Raman,O004,CloudWorks,0.1538,8.3,Degree matched; No skill overlap; Location not matched,M,Not Allocated
+S031,Harsh,O004,CloudWorks,0.1538,8.3,Degree matched; No skill overlap; Location not matched,M,Not Allocated
+S001,Aditi,O004,CloudWorks,0.1538,8.2,Degree matched; No skill overlap; Location not matched,F,Not Allocated
+S026,Yash,O004,CloudWorks,0.1538,8.2,Degree matched; No skill overlap; Location not matched,M,Not Allocated
+S025,Sanya,O004,CloudWorks,0.1538,7.7,Degree not matched; No skill overlap; Location matched,F,Not Allocated
+S016,Kabir,O004,CloudWorks,0.1385,8.8,Degree matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S032,Anjali,O004,CloudWorks,0.1385,8.7,Degree not matched; No skill overlap; Location matched; Past participation penalized,F,Not Allocated
+S011,Ishita,O004,CloudWorks,0.1385,8.5,Degree not matched; No skill overlap; Location matched; Past participation penalized,F,Not Allocated
+S018,Manav,O004,CloudWorks,0.1385,7.6,Degree not matched; No skill overlap; Location matched; Past participation penalized,M,Not Allocated
+S029,Sneha,O004,CloudWorks,0.0,9.1,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S009,Ananya,O004,CloudWorks,0.0,9.0,Degree not matched; No skill overlap; Location not matched; Past participation penalized,F,Not Allocated
+S019,Divya,O004,CloudWorks,0.0,8.9,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S003,Priya,O004,CloudWorks,0.0,8.9,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S033,Dev,O004,CloudWorks,0.0,8.8,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S038,Radhika,O004,CloudWorks,0.0,8.8,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S048,Gaurav,O004,CloudWorks,0.0,8.7,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S013,Meera,O004,CloudWorks,0.0,8.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,F,Not Allocated
+S042,Laksh,O004,CloudWorks,0.0,8.5,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S023,Tanya,O004,CloudWorks,0.0,8.5,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S006,Arjun,O004,CloudWorks,0.0,8.4,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S012,Sahil,O004,CloudWorks,0.0,7.9,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S049,Vani,O004,CloudWorks,0.0,7.9,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S005,Neha,O004,CloudWorks,0.0,7.8,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S044,Amit,O004,CloudWorks,0.0,7.8,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S040,Vikram,O004,CloudWorks,0.0,7.7,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S035,Kunal,O004,CloudWorks,0.0,7.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S030,Rakesh,O004,CloudWorks,0.0,7.5,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S002,Raj,O004,CloudWorks,0.0,7.5,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S015,Shreya,O004,CloudWorks,0.0,7.4,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S021,Riya,O004,CloudWorks,0.0,7.3,Degree not matched; No skill overlap; Location not matched; Past participation penalized,F,Not Allocated
+S008,Vivek,O004,CloudWorks,0.0,7.2,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S019,Divya,O005,GreenFuture,0.8462,8.9,"Degree not matched; Skills matched: Data Analysis, ML, Python; Location matched",F,Allocated
+S033,Dev,O005,GreenFuture,0.8462,8.8,"Degree not matched; Skills matched: Data Analysis, ML, Python; Location matched",M,Allocated
+S023,Tanya,O005,GreenFuture,0.6923,8.5,"Degree not matched; Skills matched: Data Analysis, ML, Python; Location not matched",F,Allocated
+S009,Ananya,O005,GreenFuture,0.6231,9.0,"Degree not matched; Skills matched: Data Analysis, ML, Python; Location not matched; Past participation penalized",F,Not Allocated
+S029,Sneha,O005,GreenFuture,0.4615,9.1,"Degree not matched; Skills matched: Data Analysis, Python; Location not matched",F,Not Allocated
+S003,Priya,O005,GreenFuture,0.4615,8.9,"Degree not matched; Skills matched: Data Analysis, Python; Location not matched",F,Not Allocated
+S036,Avni,O005,GreenFuture,0.4615,8.9,"Degree not matched; Skills matched: ML, Python; Location not matched",F,Not Allocated
+S038,Radhika,O005,GreenFuture,0.4615,8.8,"Degree not matched; Skills matched: Data Analysis, Python; Location not matched",F,Not Allocated
+S042,Laksh,O005,GreenFuture,0.4615,8.5,"Degree not matched; Skills matched: Data Analysis, Python; Location not matched",M,Not Allocated
+S001,Aditi,O005,GreenFuture,0.4615,8.2,"Degree not matched; Skills matched: ML, Python; Location not matched",F,Not Allocated
+S048,Gaurav,O005,GreenFuture,0.4154,8.7,"Degree not matched; Skills matched: Data Analysis, Python; Location not matched; Past participation penalized",M,Not Allocated
+S013,Meera,O005,GreenFuture,0.4154,8.6,"Degree not matched; Skills matched: Data Analysis, Python; Location not matched; Past participation penalized",F,Not Allocated
+S047,Aryan,O005,GreenFuture,0.3846,9.1,Degree not matched; Skills matched: ML; Location matched,M,Not Allocated
+S026,Yash,O005,GreenFuture,0.3846,8.2,Degree not matched; Skills matched: Python; Location matched,M,Not Allocated
+S014,Nikhil,O005,GreenFuture,0.2308,9.2,Degree not matched; Skills matched: ML; Location not matched,M,Not Allocated
+S028,Aditya,O005,GreenFuture,0.2308,8.9,Degree not matched; Skills matched: ML; Location not matched,M,Not Allocated
+S007,Simran,O005,GreenFuture,0.2308,8.7,Degree not matched; Skills matched: Python; Location not matched,F,Not Allocated
+S041,Ira,O005,GreenFuture,0.2308,8.6,Degree not matched; Skills matched: Python; Location not matched,F,Not Allocated
+S050,Tarun,O005,GreenFuture,0.2308,8.5,Degree not matched; Skills matched: Python; Location not matched,M,Not Allocated
+S022,Akash,O005,GreenFuture,0.2308,8.4,Degree not matched; Skills matched: Python; Location not matched,M,Not Allocated
+S045,Raman,O005,GreenFuture,0.2308,8.3,Degree not matched; Skills matched: Python; Location not matched,M,Not Allocated
+S004,Karan,O005,GreenFuture,0.2077,9.1,Degree not matched; Skills matched: ML; Location not matched; Past participation penalized,M,Not Allocated
+S043,Dhruv,O005,GreenFuture,0.2077,9.0,Degree not matched; Skills matched: ML; Location not matched; Past participation penalized,M,Not Allocated
+S016,Kabir,O005,GreenFuture,0.2077,8.8,Degree not matched; Skills matched: Python; Location not matched; Past participation penalized,M,Not Allocated
+S032,Anjali,O005,GreenFuture,0.2077,8.7,Degree not matched; Skills matched: Python; Location not matched; Past participation penalized,F,Not Allocated
+S011,Ishita,O005,GreenFuture,0.2077,8.5,Degree not matched; Skills matched: Python; Location not matched; Past participation penalized,F,Not Allocated
+S012,Sahil,O005,GreenFuture,0.1538,7.9,Degree not matched; No skill overlap; Location matched,M,Not Allocated
+S005,Neha,O005,GreenFuture,0.1538,7.8,Degree not matched; No skill overlap; Location matched,F,Not Allocated
+S040,Vikram,O005,GreenFuture,0.1385,7.7,Degree not matched; No skill overlap; Location matched; Past participation penalized,M,Not Allocated
+S037,Parth,O005,GreenFuture,0.0,9.2,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S024,Varun,O005,GreenFuture,0.0,9.0,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S027,Rajesh,O005,GreenFuture,0.0,8.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S034,Maya,O005,GreenFuture,0.0,8.4,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S046,Suresh,O005,GreenFuture,0.0,8.4,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S006,Arjun,O005,GreenFuture,0.0,8.4,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S010,Rohit,O005,GreenFuture,0.0,8.3,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S031,Harsh,O005,GreenFuture,0.0,8.3,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S039,Samir,O005,GreenFuture,0.0,8.1,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S017,Pooja,O005,GreenFuture,0.0,8.1,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S020,Aman,O005,GreenFuture,0.0,8.0,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S049,Vani,O005,GreenFuture,0.0,7.9,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S044,Amit,O005,GreenFuture,0.0,7.8,Degree not matched; No skill overlap; Location not matched,M,Not Allocated
+S025,Sanya,O005,GreenFuture,0.0,7.7,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S035,Kunal,O005,GreenFuture,0.0,7.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S018,Manav,O005,GreenFuture,0.0,7.6,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S030,Rakesh,O005,GreenFuture,0.0,7.5,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S002,Raj,O005,GreenFuture,0.0,7.5,Degree not matched; No skill overlap; Location not matched; Past participation penalized,M,Not Allocated
+S015,Shreya,O005,GreenFuture,0.0,7.4,Degree not matched; No skill overlap; Location not matched,F,Not Allocated
+S021,Riya,O005,GreenFuture,0.0,7.3,Degree not matched; No skill overlap; Location not matched; Past participation penalized,F,Not Allocated
+S008,Vivek,O005,GreenFuture,0.0,7.2,Degree not matched; No skill overlap; Location not matched,M,Not Allocated

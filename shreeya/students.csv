@@ -1,0 +1,51 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age
+S001,Aditi,B.Tech,Python;SQL;ML,Delhi,Rural,No,8.2,F,22
+S002,Raj,MBA,Finance;Excel;Stats,Mumbai,SC,Yes,7.5,M,24
+S003,Priya,B.Sc,Data Analysis;Python;Excel,Bangalore,OBC,No,8.9,F,21
+S004,Karan,M.Tech,AI;ML;Cloud,Hyderabad,General,Yes,9.1,M,23
+S005,Neha,B.Com,Finance;Excel;Marketing,Chennai,Rural,No,7.8,F,22
+S006,Arjun,MCA,Java;SQL;Cybersecurity,Pune,ST,Yes,8.4,M,23
+S007,Simran,B.Tech,Python;C++;React,Kolkata,OBC,No,8.7,F,24
+S008,Vivek,MBA,Finance;Stats;Excel,Delhi,SC,No,7.2,M,22
+S009,Ananya,B.Sc,Data Analysis;ML;Python,Mumbai,Rural,Yes,9.0,F,23
+S010,Rohit,B.Tech,Cloud;Networking;AI,Bangalore,General,No,8.3,M,21
+S011,Ishita,MCA,Java;SQL;Python,Hyderabad,OBC,Yes,8.5,F,22
+S012,Sahil,B.Com,Finance;Marketing;Excel,Chennai,General,No,7.9,M,24
+S013,Meera,B.Sc,Stats;Data Analysis;Python,Pune,SC,Yes,8.6,F,23
+S014,Nikhil,B.Tech,AI;ML;Cloud,Kolkata,Rural,No,9.2,M,22
+S015,Shreya,MBA,Marketing;Excel;Finance,Delhi,ST,No,7.4,F,21
+S016,Kabir,B.Tech,Python;SQL;C++,Mumbai,OBC,Yes,8.8,M,24
+S017,Pooja,MCA,Cybersecurity;Networking;Java,Bangalore,General,No,8.1,F,23
+S018,Manav,B.Com,Finance;Excel;Marketing,Hyderabad,Rural,Yes,7.6,M,22
+S019,Divya,B.Sc,Python;Data Analysis;ML,Chennai,SC,No,8.9,F,23
+S020,Aman,B.Tech,Cloud;AI;React,Pune,OBC,No,8.0,M,21
+S021,Riya,MBA,Finance;Stats;Excel,Kolkata,Rural,Yes,7.3,F,22
+S022,Akash,B.Tech,Python;C++;SQL,Delhi,General,No,8.4,M,23
+S023,Tanya,B.Sc,Data Analysis;Python;ML,Mumbai,ST,No,8.5,F,24
+S024,Varun,M.Tech,AI;Cloud;Networking,Bangalore,OBC,Yes,9.0,M,23
+S025,Sanya,B.Com,Finance;Excel;Marketing,Hyderabad,Rural,No,7.7,F,22
+S026,Yash,B.Tech,Python;SQL;C++,Chennai,General,No,8.2,M,23
+S027,Rajesh,MCA,Java;Cybersecurity;Networking,Pune,SC,Yes,8.6,M,21
+S028,Aditya,B.Tech,ML;AI;Cloud,Kolkata,OBC,No,8.9,M,22
+S029,Sneha,B.Sc,Python;Stats;Data Analysis,Delhi,ST,No,9.1,F,24
+S030,Rakesh,MBA,Excel;Finance;Marketing,Mumbai,Rural,Yes,7.5,M,23
+S031,Harsh,B.Tech,C++;SQL;React,Bangalore,General,No,8.3,M,22
+S032,Anjali,MCA,Java;Python;Cybersecurity,Hyderabad,OBC,Yes,8.7,F,23
+S033,Dev,B.Sc,ML;Data Analysis;Python,Chennai,SC,No,8.8,M,24
+S034,Maya,B.Tech,Cloud;AI;Networking,Pune,General,No,8.4,F,21
+S035,Kunal,B.Com,Finance;Excel;Marketing,Kolkata,Rural,Yes,7.6,M,23
+S036,Avni,B.Tech,Python;SQL;ML,Delhi,OBC,No,8.9,F,22
+S037,Parth,M.Tech,AI;Cloud;C++,Mumbai,General,Yes,9.2,M,24
+S038,Radhika,B.Sc,Data Analysis;Stats;Python,Bangalore,ST,No,8.8,F,22
+S039,Samir,MCA,Java;Networking;Cybersecurity,Hyderabad,Rural,No,8.1,M,23
+S040,Vikram,B.Com,Finance;Excel;Marketing,Chennai,OBC,Yes,7.7,M,22
+S041,Ira,B.Tech,Python;C++;AI,Pune,General,No,8.6,F,23
+S042,Laksh,B.Sc,Stats;Data Analysis;Python,Kolkata,SC,No,8.5,M,24
+S043,Dhruv,M.Tech,Cloud;ML;AI,Delhi,Rural,Yes,9.0,M,22
+S044,Amit,B.Com,Finance;Excel;Marketing,Mumbai,OBC,No,7.8,M,23
+S045,Raman,B.Tech,SQL;Python;C++,Bangalore,General,No,8.3,M,22
+S046,Suresh,MCA,Cybersecurity;Java;Networking,Hyderabad,ST,Yes,8.4,M,25
+S047,Aryan,B.Tech,AI;Cloud;ML,Chennai,Rural,No,9.1,M,21
+S048,Gaurav,B.Sc,Python;Data Analysis;Stats,Pune,OBC,Yes,8.7,M,23
+S049,Vani,B.Com,Finance;Excel;Marketing,Kolkata,General,No,7.9,F,20
+S050,Tarun,B.Tech,C++;Python;SQL,Delhi,SC,No,8.5,M,25
