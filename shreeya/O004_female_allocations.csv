@@ -1,0 +1,4 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age,score,status
+S394,Tanya,B.Tech,AI;Marketing;Cloud,Hyderabad,General,No,9.4,F,23,26.8,Allocated - Female
+S341,Lisa,B.Tech,Python;Cloud;C++,Hyderabad,ST,No,9.3,F,24,25.6,Allocated - Female
+S197,Rodney,B.Tech,Stats;SQL;Cloud,Hyderabad,pwd,No,8.0,F,23,23.0,Allocated - Female

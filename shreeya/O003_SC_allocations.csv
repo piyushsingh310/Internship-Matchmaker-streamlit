@@ -1,0 +1,7 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age,score,status
+S502,Jayesh,B.Sc,Python;Data Analysis;ML,Chennai,SC,No,9.2,M,23,25.4,Allocated - SC
+S501,Kia,B.Sc,Python;Data Analysis;ML,Chennai,SC,No,9.1,F,23,25.2,Allocated - SC
+S042,Laksh,B.Sc,Stats;Data Analysis;Python,Kolkata,SC,No,8.5,M,24,25.0,Allocated - SC
+S500,Tammy,B.Sc,Python;Data Analysis;Stats,Mumbai,SC,No,8.5,F,21,25.0,Allocated - SC
+S019,Divya,B.Sc,Python;Data Analysis;ML,Chennai,SC,No,8.9,F,23,24.8,Allocated - SC
+S258,Adam,B.Sc,C++;Python;Finance,Hyderabad,SC,No,9.3,M,23,24.6,Allocated - SC

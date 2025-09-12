@@ -1,0 +1,6 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age,score,status
+S514,Ved,B.Sc,Python;Data Analysis;ML,Chennai,pwd,No,9.9,M,23,29.8,Allocated - PWD
+S515,Kajol,B.Sc,Python;Data Analysis;ML,Chennai,pwd,No,8.5,F,21,27.0,Allocated - PWD
+S517,Karanvir,B.Sc,Python;Data Analysis;ML,Chennai,pwd,No,7.9,M,21,25.8,Allocated - PWD
+S516,Prakash,B.Sc,Python;Data Analysis;ML,Chennai,pwd,Yes,7.8,M,24,24.6,Allocated - PWD
+S491,Sharon,B.Sc,Python;SQL;Data Analysis,Chennai,pwd,Yes,7.9,F,23,23.8,Allocated - PWD
