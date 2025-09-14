@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Internship Matching Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>Configuration</h2>
+        <form id="upload-form">
+            <label for="csv-file">1. Upload Candidates CSV</label>
+            <p class="caption">Must include: `name`, `education`, `skills`, `city`, `state`, `gender`, `category`.</p>
+            <input type="file" id="csv-file" accept=".csv" required>
+            <button type="submit" class="button-primary">Upload File</button>
+            <div id="upload-status" class="status-message">Using sample data.</div>
+        </form>
+    </aside>
+
+    <main class="main-content">
+        <h1>🎓 AI-Powered Internship Matching Engine</h1>
+
+        <div class="tab-container">
+            <button class="tab-button active" data-tab="tab-presets">Preset Internships</button>
+            <button class="tab-button" data-tab="tab-custom">Create Custom Internship</button>
+        </div>
+
+        <section id="tab-presets" class="tab-content active">
+            <h2>Select a Preset Internship</h2>
+            <div id="preset-cards-container" class="card-grid">
+                </div>
+        </section>
+
+        <section id="tab-custom" class="tab-content">
+            <h2>Define a Custom Internship Role</h2>
+            <form id="custom-internship-form" class="custom-form-container">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="post">Internship Post Title</label>
+                        <input type="text" id="post" value="Data Science Intern" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" value="Future Corp" required>
+                    </div>
+                     <div class="form-group">
+                        <label for="offers">Number of Offers (N)</label>
+                        <input type="number" id="offers" value="5" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" value="Hyderabad" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <select id="state" required></select> </div>
+                    <div class="form-group">
+                        <label for="degree">Required Degree(s)</label>
+                        <select id="degree" multiple required></select> </div>
+                    <div class="form-group">
+                        <label for="branch">Required Branch(es)</label>
+                        <select id="branch" multiple></select> </div>
+                    <div class="form-group form-span-2">
+                        <label for="skills">Required Skills</label>
+                        <select id="skills" multiple required></select> </div>
+                </div>
+
+                <h3>Set Matching Priorities</h3>
+                <div class="priority-grid">
+                    <div class="form-group">
+                        <label>Priority 1 (Weight: 0.4)</label>
+                        <select id="p1" class="priority-select">
+                            <option value="skills" selected>Skills</option>
+                            <option value="education">Education</option>
+                            <option value="location">Location</option>
+                            <option value="interest">Interest</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Priority 2 (Weight: 0.3)</label>
+                        <select id="p2" class="priority-select">
+                            <option value="skills">Skills</option>
+                            <option value="education" selected>Education</option>
+                            <option value="location">Location</option>
+                            <option value="interest">Interest</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Priority 3 (Weight: 0.2)</label>
+                        <select id="p3" class="priority-select">
+                            <option value="skills">Skills</option>
+                            <option value="education">Education</option>
+                            <option value="location" selected>Location</option>
+                            <option value="interest">Interest</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Priority 4 (Weight: 0.1)</label>
+                        <select id="p4" class="priority-select">
+                            <option value="skills">Skills</option>
+                            <option value="education">Education</option>
+                            <option value="location">Location</option>
+                            <option value="interest" selected>Interest</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="button-primary button-full-width">Compute Custom Ranking</button>
+            </form>
+        </section>
+
+        <section id="results-container" class="results-section">
+            </section>
+
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
