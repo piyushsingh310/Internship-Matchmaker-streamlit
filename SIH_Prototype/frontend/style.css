@@ -83,6 +83,7 @@ a { color: var(--primary); }
 }
 .button-full-width {
     width: 100%;
+    margin-top: 20px; /* Added margin for allotment button */
 }
 .caption {
     font-size: 13px;
@@ -108,6 +109,7 @@ a { color: var(--primary); }
     font-family: var(--font-sans);
 }
 select[multiple] {
+    /* These selects are now hidden by TomSelect, but we leave this for graceful fallback */
     height: 120px;
     padding: 5px;
 }
@@ -154,7 +156,7 @@ select[multiple] {
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 
-/* --- Preset Job Cards (New 3-col layout) --- */
+/* --- Preset Job Cards (3-col layout) --- */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
@@ -162,14 +164,15 @@ select[multiple] {
 }
 .card {
     background: var(--bg-content);
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color); /* Increased border width for selection */
     border-radius: 10px;
     padding: 20px;
     box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 190px; /* Updated min-height */
+    min-height: 190px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .card h3 { margin-top: 0; margin-bottom: 8px; font-size: 1.2rem; }
 .card p { color: var(--text-light); margin: 0 0 12px 0; font-size: 14px; }
@@ -184,6 +187,19 @@ select[multiple] {
     font-size: 15px;
     margin-top: auto; /* Pushes button to the bottom */
 }
+
+/* --- NEW: Selectable card styles for Allotment Tab --- */
+.card.selectable {
+    cursor: pointer;
+}
+.card.selectable:hover {
+    border-color: var(--primary-hover);
+}
+.card.selectable.selected {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.2); /* Highlight effect */
+}
+
 
 /* --- Custom Form Layout --- */
 .custom-form-container {
@@ -208,14 +224,54 @@ select[multiple] {
     margin: 24px 0;
 }
 
-/* --- 5. RESULTS SECTION (ALL NEW) --- */
+/* --- NEW: TomSelect (Dropdown Checklist) Style Overrides --- */
+.ts-wrapper.multi .ts-control [data-value] {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 4px;
+}
+.ts-wrapper.multi .ts-control [data-value] .remove {
+    border-left: 1px solid var(--primary-hover);
+    color: white !important;
+}
+.ts-wrapper.multi .ts-control [data-value] .remove:hover {
+    background: var(--primary-hover);
+}
+.ts-dropdown {
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    background-color: var(--bg-content); /* <-- ADDED: Makes the dropdown solid white */
+    z-index: 100;                        /* <-- ADDED: Ensures it's on top of other content */
+}
+.ts-dropdown .option {
+    padding: 8px 12px;
+}
+.ts-dropdown .active {
+    background-color: var(--info-bg);
+    color: var(--info);
+}
+.ts-control {
+    /* Make TomSelect inputs match our other inputs */
+    padding: 8px 12px !important; 
+    border: 1px solid var(--border-color) !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+}
+
+.ts-wrapper.form-control, .ts-wrapper.form-select {
+    padding: 0 !important; /* Remove wrapper padding */
+}
+
+
+/* --- 5. RESULTS SECTION --- */
 .results-section {
     margin-top: 30px;
 }
 .results-header {
     margin-bottom: 16px;
 }
-/* New Filter Grid */
+/* Filter Grid */
 .filter-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -226,7 +282,7 @@ select[multiple] {
     border-radius: 8px 8px 0 0;
     border-bottom: none;
 }
-/* New Results Table */
+/* Results Table */
 .results-table-container {
     max-height: 600px;
     overflow-y: auto;
@@ -269,7 +325,7 @@ select[multiple] {
     width: 16px;
     height: 16px;
 }
-/* New Submission Panel */
+/* Submission Panel */
 .submission-panel {
     margin-top: 24px;
     padding: 20px;

@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.bootstrap5.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +19,7 @@
         <h2>Configuration</h2>
         <form id="upload-form">
             <label for="csv-file">1. Upload Candidates CSV</label>
-            <p class="caption">Must include: `name`, `education`, `skills`, `city`, `state`, `gender`, `category`.</p>
+            <p class="caption">Must include: `name`, `education`, `skills`, `city`, `state`. Optional: `gender`, `category`, `past_participation` (set to "YES" to penalize).</p>
             <input type="file" id="csv-file" accept=".csv" required>
             <button type="submit" class="button-primary">Upload File</button>
             <div id="upload-status" class="status-message">Using sample data.</div>
@@ -23,51 +27,57 @@
     </aside>
 
     <main class="main-content">
-        <h1>🎓 AI-Powered Internship Matching Engine</h1>
+        <h1>🎓 Skill-Bridge Internship Matching Model</h1>
 
         <div class="tab-container">
             <button class="tab-button active" data-tab="tab-presets">Preset Internships</button>
-            <button class="tab-button" data-tab="tab-custom">Create Custom Internship</button>
+            <button class="tab-button" data-tab="tab-custom">Add Internship Post</button>
+            <button class="tab-button" data-tab="tab-allotment">Smart Allotment</button>
         </div>
 
         <section id="tab-presets" class="tab-content active">
             <h2>Select a Preset Internship</h2>
+            <p>Select a single job to see a ranked list of all candidates for that specific role.</p>
             <div id="preset-cards-container" class="card-grid">
                 </div>
         </section>
 
         <section id="tab-custom" class="tab-content">
-            <h2>Define a Custom Internship Role</h2>
+            <h2>Add a new Custom Internship Role</h2>
             <form id="custom-internship-form" class="custom-form-container">
                 <div class="form-grid">
                     <div class="form-group">
                         <label for="post">Internship Post Title</label>
-                        <input type="text" id="post" value="Data Science Intern" required>
+                        <input type="text" id="post" placeholder="Data Science Intern" required>
                     </div>
                     <div class="form-group">
                         <label for="company">Company Name</label>
-                        <input type="text" id="company" value="Future Corp" required>
+                        <input type="text" id="company" placeholder="Future Corp" required>
                     </div>
                      <div class="form-group">
                         <label for="offers">Number of Offers (N)</label>
-                        <input type="number" id="offers" value="5" min="1" required>
+                        <input type="number" id="offers" placeholder="5" min="1" required>
                     </div>
                     <div class="form-group">
                         <label for="city">City</label>
-                        <input type="text" id="city" value="Hyderabad" required>
+                        <input type="text" id="city" placeholder="Hyderabad" required>
                     </div>
                     <div class="form-group">
                         <label for="state">State</label>
-                        <select id="state" required></select> </div>
+                        <select id="state" required></select> 
+                    </div>
                     <div class="form-group">
                         <label for="degree">Required Degree(s)</label>
-                        <select id="degree" multiple required></select> </div>
+                        <select id="degree" multiple required></select> 
+                    </div>
                     <div class="form-group">
                         <label for="branch">Required Branch(es)</label>
-                        <select id="branch" multiple></select> </div>
+                         <select id="branch" multiple></select> 
+                    </div>
                     <div class="form-group form-span-2">
                         <label for="skills">Required Skills</label>
-                        <select id="skills" multiple required></select> </div>
+                         <select id="skills" multiple required></select> 
+                    </div>
                 </div>
 
                 <h3>Set Matching Priorities</h3>
@@ -112,6 +122,17 @@
                 <button type="submit" class="button-primary button-full-width">Compute Custom Ranking</button>
             </form>
         </section>
+
+        <section id="tab-allotment" class="tab-content">
+            <h2>Smart Allotment Engine</h2>
+            <p>Select multiple internship roles. The model will assign every candidate to their single best-fit role, enforcing diversity quotas and respecting offer limits.</p>
+            <div id="allotment-cards-container" class="card-grid">
+                </div>
+            <button id="generate-allotment-btn" class="button-primary button-full-width">Generate Allotment List</button>
+            <div id="allotment-results-container" class="results-section">
+                </div>
+        </section>
+
 
         <section id="results-container" class="results-section">
             </section>

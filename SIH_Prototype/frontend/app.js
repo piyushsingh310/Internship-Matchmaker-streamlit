@@ -2,12 +2,19 @@
 const API_BASE_URL = "http://127.0.0.1:8000";
 
 // --- STATE VARIABLES ---
-// We must store data globally to manage filters and selections, just like Streamlit
 let PRESET_JOBS = [];
 let FORM_DATA = {};
 let CURRENT_RANKED_LIST = [];   // Stores the full, unfiltered list from the API
 let CURRENT_INTERNSHIP = {};    // Stores the details of the job being ranked
 let FILTERED_CANDIDATE_LIST = []; // Stores the visible, filtered/sorted list
+
+// --- NEW STATE for TomSelect (Dropdown Checklist) ---
+let tsDegree, tsBranch, tsSkills; 
+
+// --- NEW STATE for Allotment ---
+let SELECTED_ALLOTMENT_JOBS = new Set();
+let CURRENT_ALLOTMENT_LIST = []; // Stores the master allotment list
+let FILTERED_ALLOTMENT_LIST = []; // Stores the visible/filtered allotment list
 
 
 // --- Wait for the entire webpage (HTML) to load before running any JavaScript ---
@@ -25,6 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const customForm = document.getElementById("custom-internship-form");
     const resultsContainer = document.getElementById("results-container");
 
+    // --- NEW: Allotment element references ---
+    const allotmentContainer = document.getElementById("allotment-cards-container");
+    const generateAllotmentBtn = document.getElementById("generate-allotment-btn");
+    const allotmentResultsContainer = document.getElementById("allotment-results-container");
+
+
     // --- 1. INITIALIZATION ---
     
     async function initializeApp() {
@@ -38,8 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
             PRESET_JOBS = await presetsRes.json();
             FORM_DATA = await formDataRes.json();
 
-            renderPresetCards();
             populateFormDropdowns();
+            renderPresetCards();
+            renderAllotmentCards(); // NEW: Render cards for allotment tab
 
         } catch (error) {
             console.error("Failed to initialize app:", error);
@@ -47,11 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    /**
+     * UPDATED: Now populates all dropdowns AND initializes TomSelect
+     * for the multi-select dropdown checklists.
+     */
     function populateFormDropdowns() {
         // Helper to populate a <select>
         const populateSelect = (selectId, optionsList, defaultSelection = null) => {
             const select = document.getElementById(selectId);
             if (!select) return;
+            select.innerHTML = ''; // Clear existing options
             optionsList.forEach(option => {
                 const optElement = document.createElement('option');
                 optElement.value = option;
@@ -65,10 +84,17 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         };
 
+        // Populate ALL dropdowns first (including the ones TomSelect will hide)
         populateSelect('state', FORM_DATA.indian_states, 'Telangana');
         populateSelect('degree', FORM_DATA.bachelors_degrees, ['B.TECH']);
         populateSelect('branch', FORM_DATA.all_branches, ['CS', 'IT']);
-        populateSelect('skills', FORM_DATA.all_skills_list, ['PYTHON', 'AIML', 'SQL', 'COMMUNICATION']);
+        populateSelect('skills', FORM_DATA.all_skills_list, ['PYTHON', 'AIML', 'SQL']);
+
+        // NOW, initialize TomSelect on the multi-select inputs
+        // This enhances the <select> elements into dropdown checklists
+        tsDegree = new TomSelect('#degree', { plugins: ['remove_button'], placeholder: 'Select required degrees...' });
+        tsBranch = new TomSelect('#branch', { plugins: ['remove_button'], placeholder: 'Select required branches...' });
+        tsSkills = new TomSelect('#skills', { plugins: ['remove_button'], placeholder: 'Select required skills...' });
     }
 
     function renderPresetCards() {
@@ -76,7 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
         PRESET_JOBS.forEach(job => {
             const card = document.createElement("div");
             card.className = "card";
-            // Updated card HTML to match new Streamlit style
             card.innerHTML = `
                 <div>
                     <h3>${job.post}</h3>
@@ -96,7 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
             button.addEventListener('click', handlePresetRankClick);
         });
     }
-
 
     // --- 2. EVENT LISTENERS & HANDLERS ---
 
@@ -129,6 +153,9 @@ document.addEventListener("DOMContentLoaded", () => {
             tabContents.forEach(content => content.classList.remove("active"));
             button.classList.add("active");
             document.getElementById(button.dataset.tab).classList.add("active");
+            // Clear single-ranking results when switching tabs
+            resultsContainer.innerHTML = "";
+            allotmentResultsContainer.innerHTML = "";
         });
     });
 
@@ -140,9 +167,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    /**
+     * UPDATED: Now reads values directly from TomSelect instances
+     * using .getValue() instead of parsing selectedOptions.
+     */
     customForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        const getMultiSelectValues = (id) => Array.from(document.getElementById(id).selectedOptions).map(opt => opt.value);
         
         const customJobData = {
             post: document.getElementById("post").value,
@@ -150,9 +180,10 @@ document.addEventListener("DOMContentLoaded", () => {
             offers: parseInt(document.getElementById("offers").value, 10),
             city: document.getElementById("city").value,
             state: document.getElementById("state").value,
-            degree: getMultiSelectValues("degree"),
-            branch: getMultiSelectValues("branch"),
-            skills: getMultiSelectValues("skills"),
+            // Read values from the TomSelect JS instances
+            degree: tsDegree.getValue(),
+            branch: tsBranch.getValue(),
+            skills: tsSkills.getValue(),
             priority: [
                 document.getElementById("p1").value,
                 document.getElementById("p2").value,
@@ -164,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // --- 3. CORE API CALL ---
+    // --- 3. CORE API CALL (Single Ranking) ---
 
     async function rankCandidates(internshipData) {
         resultsContainer.innerHTML = `<p class="info">Ranking candidates for ${internshipData.post}...</p>`;
@@ -179,13 +210,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const result = await response.json();
             if (!response.ok) throw new Error(result.detail || "Ranking failed");
             
-            // --- NEW: Store data globally and render the full results UI ---
             CURRENT_RANKED_LIST = result.ranking;
             CURRENT_INTERNSHIP = internshipData;
-            FILTERED_CANDIDATE_LIST = [...CURRENT_RANKED_LIST]; // At first, filtered list is the full list
+            FILTERED_CANDIDATE_LIST = [...CURRENT_RANKED_LIST];
             
             displayFullResultsUI(internshipData);
-            applyFiltersAndRedrawTable(); // Draw the initial table
+            applyFiltersAndRedrawTable();
 
         } catch (error) {
             console.error("Ranking error:", error);
@@ -194,13 +224,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // --- 4. NEW RESULTS, FILTERING, & SUBMISSION LOGIC ---
-
-    /**
-     * This is the new master function that builds the *entire* results UI,
-     * including filters, the table container, and the submission panel.
-     * It's called ONCE per ranking.
-     */
+    // --- 4. SINGLE RANKING RESULTS UI (Unchanged) ---
+    // (This whole section is unchanged from your original file)
     function displayFullResultsUI(internship) {
         const uniqueGenders = ["ALL", ...new Set(CURRENT_RANKED_LIST.map(c => c.Gender).filter(g => g))];
         const uniqueCategories = ["ALL", ...new Set(CURRENT_RANKED_LIST.map(c => c.Category).filter(c => c && !['GENERAL', ''].includes(c))), "GENERAL"];
@@ -210,7 +235,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h2>Ranking for: ${internship.post} at ${internship.company}</h2>
                 <p>Highlighting top <strong>${internship.offers}</strong> potential matches. Use filters to refine the list.</p>
             </div>
-
             <div class="filter-grid" id="filter-controls">
                 <div class="form-group">
                     <label for="filter-category">Filter by Category</label>
@@ -235,126 +259,71 @@ document.addEventListener("DOMContentLoaded", () => {
                     </select>
                 </div>
             </div>
-
-            <div class="results-table-container" id="results-table-container">
-                </div>
-
+            <div class="results-table-container" id="results-table-container"></div>
             <div class="submission-panel" id="submission-panel">
-                <div id="selection-feedback">
-                    </div>
+                <div id="selection-feedback"></div>
                 <div class="metric-display" id="selection-metric">0 / ${internship.offers}</div>
                 <button class="button-primary" id="submit-selection-btn">Submit Selections</button>
             </div>
-            
             <div id="final-submission-message"></div>
         `;
-
-        // --- Add event listeners to the new controls ---
         document.getElementById('filter-category').addEventListener('change', applyFiltersAndRedrawTable);
         document.getElementById('filter-gender').addEventListener('change', applyFiltersAndRedrawTable);
         document.getElementById('sort-by').addEventListener('change', applyFiltersAndRedrawTable);
         document.getElementById('submit-selection-btn').addEventListener('click', handleSubmitSelection);
-        
-        // Use event delegation for checkboxes (since they will be redrawn)
         document.getElementById('results-table-container').addEventListener('change', (e) => {
             if (e.target.classList.contains('candidate-select-checkbox')) {
                 updateSelectionCount();
             }
         });
     }
-
-    /**
-     * This function reads the filter dropdowns, filters the master list, 
-     * sorts it, and then calls renderTable() to draw it.
-     * This is called ANY time a filter or sort option is changed.
-     */
     function applyFiltersAndRedrawTable() {
         const category = document.getElementById('filter-category').value;
         const gender = document.getElementById('filter-gender').value;
         const sortBy = document.getElementById('sort-by').value;
-
-        // 1. Filter
-        let filteredList = [...CURRENT_RANKED_LIST]; // Start from the master list
+        let filteredList = [...CURRENT_RANKED_LIST];
         if (category && category !== 'ALL') {
             filteredList = filteredList.filter(c => c.Category === category);
         }
         if (gender && gender !== 'ALL') {
             filteredList = filteredList.filter(c => c.Gender === gender);
         }
-
-        // 2. Sort
-        filteredList.sort((a, b) => {
-            // Sort by the chosen column, descending. 
-            // All values are numbers (percentages)
-            return b[sortBy] - a[sortBy];
-        });
-
-        // 3. Re-Rank
-        // The visible rank must be updated based on the filtered/sorted view
-        filteredList.forEach((item, index) => {
-            item.Rank = index + 1; // Update rank dynamically
-        });
-        
-        FILTERED_CANDIDATE_LIST = filteredList; // Store the currently visible list
-
-        // 4. Redraw the table
+        filteredList.sort((a, b) => b[sortBy] - a[sortBy]);
+        filteredList.forEach((item, index) => { item.Rank = index + 1; });
+        FILTERED_CANDIDATE_LIST = filteredList;
         renderTable(FILTERED_CANDIDATE_LIST);
-        // 5. Update counts (in case any previously-checked items are now hidden)
         updateSelectionCount();
     }
-
-    /**
-     * This function ONLY builds the HTML for the table and injects it.
-     */
     function renderTable(candidates) {
         const tableContainer = document.getElementById('results-table-container');
         const offers = CURRENT_INTERNSHIP.offers;
-        
-        // Get headers from the first candidate, excluding hidden fields
         const headers = Object.keys(candidates[0] || {}).filter(h => h !== 'Gender' && h !== 'Category');
-        
         let headerHtml = "<tr>" + headers.map(h => `<th>${h}</th>`).join("") + "</tr>";
-
         let rowsHtml = candidates.map((candidate) => {
             const isTopPick = candidate['Rank'] <= offers;
             const rowClass = isTopPick ? 'class="top-pick"' : '';
-            
             const cellsHtml = headers.map(header => {
                 let value = candidate[header];
                 if (header === 'Select') {
-                    // This data-name links the checkbox to the unique candidate name
                     return `<td><input type="checkbox" class="candidate-select-checkbox" data-name="${candidate.Name}" ${candidate.Select ? 'checked' : ''}></td>`;
                 }
-                if (header.includes('%')) {
-                    value = `${value}%`; // Add % sign back
-                }
+                if (header.includes('%')) { value = `${value}%`; }
                 return `<td>${value}</td>`;
             }).join("");
-
             return `<tr ${rowClass}>${cellsHtml}</tr>`;
         }).join("");
-
         tableContainer.innerHTML = `
             <table class="results-table">
                 <thead>${headerHtml}</thead>
-                <tbody>${rowsHtml || '<tr><td colspan="${headers.length}">No candidates match the current filters.</td></tr>'}</tbody>
+                <tbody>${rowsHtml || `<tr><td colspan="${headers.length}">No candidates match the current filters.</td></tr>`}</tbody>
             </table>
         `;
     }
-
-    /**
-     * Checks how many boxes are selected and updates the feedback panel.
-     * Called every time a checkbox is clicked.
-     */
     function updateSelectionCount() {
         const checkedBoxes = document.querySelectorAll('#results-table-container .candidate-select-checkbox:checked');
         const numSelected = checkedBoxes.length;
         const offersLimit = CURRENT_INTERNSHIP.offers;
-
-        // Update the metric
         document.getElementById('selection-metric').innerHTML = `${numSelected} / ${offersLimit}`;
-
-        // Update the feedback message
         const feedbackEl = document.getElementById('selection-feedback');
         if (numSelected > offersLimit) {
             feedbackEl.innerHTML = `⚠️ Too many selected! Limit: ${offersLimit}`;
@@ -367,50 +336,235 @@ document.addEventListener("DOMContentLoaded", () => {
             feedbackEl.className = 'feedback-message success';
         }
     }
-
-    /**
-     * Final submission logic, runs when the "Submit" button is clicked.
-     */
     function handleSubmitSelection() {
         const checkedBoxes = document.querySelectorAll('#results-table-container .candidate-select-checkbox:checked');
         const numSelected = checkedBoxes.length;
         const offersLimit = CURRENT_INTERNSHIP.offers;
-
         const finalMessageEl = document.getElementById('final-submission-message');
-
-        // Validation logic from Streamlit
         if (numSelected > offersLimit) {
             finalMessageEl.innerHTML = `<p class="feedback-message error">Error: You can only select up to ${offersLimit} candidates. Please uncheck some.</p>`;
             return;
         }
         if (numSelected === 0) {
-            finalMessageEl.innerHTML = `<p class="feedback-message info">Please select at least one candidate.</p>`; // Changed from warning to info
+            finalMessageEl.innerHTML = `<p class="feedback-message info">Please select at least one candidate.</p>`;
             return;
         }
-
-        // Success! Get the list of names.
         let selectedCandidateHtml = "";
         checkedBoxes.forEach(box => {
             const name = box.dataset.name;
-            // Find the full candidate object from the (visible) filtered list to get their match score
             const candidate = FILTERED_CANDIDATE_LIST.find(c => c.Name === name);
             if (candidate) {
                 selectedCandidateHtml += `<li><b>${candidate.Name}</b> (Match: ${candidate['Overall Match %']}%)</li>`;
             }
         });
-
-        // Mimic st.success + st.balloons + st.write
-        alert("Selections Submitted! 🎈🎈🎈"); // Mimics st.balloons()
+        alert("Selections Submitted! 🎈🎈🎈");
         finalMessageEl.innerHTML = `
             <div class="submit-success-popup">
                 <h3>✅ Selections Submitted!</h3>
                 <p><b>Selected Candidates for ${CURRENT_INTERNSHIP.post}:</b></p>
-                <ul>
-                    ${selectedCandidateHtml}
-                </ul>
+                <ul>${selectedCandidateHtml}</ul>
             </div>
         `;
         finalMessageEl.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // --- 5. *** NEW SMART ALLOTMENT UI & LOGIC *** ---
+
+    /**
+     * Renders the preset job cards into the Allotment tab,
+     * making them selectable instead of having a button.
+     */
+    function renderAllotmentCards() {
+        allotmentContainer.innerHTML = ""; // Clear old data
+        PRESET_JOBS.forEach(job => {
+            const card = document.createElement("div");
+            // Add 'selectable' class and a data-key
+            card.className = "card selectable";
+            card.dataset.key = job.key;
+            card.innerHTML = `
+                <div>
+                    <h3>${job.post}</h3>
+                    <p><b>${job.company}</b> • ${job.city}</p>
+                    <div class="card-details">
+                        <b>Offers: ${job.offers}</b><br>
+                        <b>Degree:</b> ${job.degree.join(', ')}<br>
+                        <b>Skills:</b> ${job.skills.slice(0, 3).join(', ')}...
+                    </div>
+                </div>
+            `; // No button
+            card.addEventListener('click', handleAllotmentCardClick);
+            allotmentContainer.appendChild(card);
+        });
+    }
+
+    /**
+     * Handles clicking a job card in the Allotment tab.
+     * Toggles its selection state and updates the global Set.
+     */
+    function handleAllotmentCardClick(e) {
+        const card = e.currentTarget;
+        const jobKey = card.dataset.key;
+        if (SELECTED_ALLOTMENT_JOBS.has(jobKey)) {
+            card.classList.remove("selected");
+            SELECTED_ALLOTMENT_JOBS.delete(jobKey);
+        } else {
+            card.classList.add("selected");
+            SELECTED_ALLOTMENT_JOBS.add(jobKey);
+        }
+    }
+
+    // Add listener to the main "Generate Allotment" button
+    generateAllotmentBtn.addEventListener('click', handleGenerateAllotment);
+
+    /**
+     * Main function to trigger the new backend allotment API.
+     */
+    async function handleGenerateAllotment() {
+        if (SELECTED_ALLOTMENT_JOBS.size === 0) {
+            allotmentResultsContainer.innerHTML = `<p class="feedback-message error">Please select at least one internship role to generate an allotment.</p>`;
+            return;
+        }
+
+        const jobKeys = Array.from(SELECTED_ALLOTMENT_JOBS);
+        allotmentResultsContainer.innerHTML = `<p class="feedback-message info">Generating smart allotment for ${jobKeys.length} roles... This may take a moment.</p>`;
+        allotmentResultsContainer.scrollIntoView({ behavior: 'smooth' });
+
+        try {
+            const response = await fetch(`${API_BASE_URL}/api/generate-allotment`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ job_keys: jobKeys }),
+            });
+            const result = await response.json();
+            if (!response.ok) throw new Error(result.detail || "Allotment failed");
+
+            // Store results globally
+            CURRENT_ALLOTMENT_LIST = result.allotment_list;
+            FILTERED_ALLOTMENT_LIST = [...CURRENT_ALLOTMENT_LIST];
+            
+            // Render the results UI
+            renderAllotmentResultsUI();
+            
+        } catch (error) {
+            console.error("Allotment error:", error);
+            allotmentResultsContainer.innerHTML = `<p class="feedback-message error">Error: ${error.message}. Did you upload a candidate CSV?</p>`;
+        }
+    }
+
+    /**
+     * Renders the *entire* allotment results UI, including filters and table.
+     * This is separate from the single-job ranking UI.
+     */
+    function renderAllotmentResultsUI() {
+        // Get unique filter values from the allotment list
+        const uniqueGenders = ["ALL", ...new Set(CURRENT_ALLOTMENT_LIST.map(c => c.Gender).filter(g => g))];
+        const uniqueCategories = ["ALL", ...new Set(CURRENT_ALLOTMENT_LIST.map(c => c.Category).filter(c => c && !['GENERAL', ''].includes(c))), "GENERAL"];
+        const uniqueStatuses = ["ALL", "Allotted", "Waitlisted"];
+
+        allotmentResultsContainer.innerHTML = `
+            <div class="results-header">
+                <h2>Master Allotment List</h2>
+                <p>Showing all candidates. "Allotted" candidates are assigned to their best-fit job, respecting quotas. Others are "Waitlisted".</p>
+            </div>
+            
+            <div class="filter-grid" id="allotment-filter-controls">
+                <div class="form-group">
+                    <label for="filter-allot-status">Filter by Status</label>
+                    <select id="filter-allot-status">
+                         ${uniqueStatuses.map(s => `<option value="${s}">${s}</option>`).join('')}
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="filter-allot-category">Filter by Category</label>
+                    <select id="filter-allot-category">
+                        ${uniqueCategories.map(c => `<option value="${c}">${c}</option>`).join('')}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="filter-allot-gender">Filter by Gender</label>
+                    <select id="filter-allot-gender">
+                        ${uniqueGenders.map(g => `<option value="${g}">${g}</option>`).join('')}
+                    </select>
+                </div>
+            </div>
+            
+            <div class="results-table-container" id="allotment-table-container">
+                </div>
+        `;
+
+        // Add listeners to the new filter dropdowns
+        document.getElementById('filter-allot-status').addEventListener('change', applyAllotmentFiltersAndRedraw);
+        document.getElementById('filter-allot-category').addEventListener('change', applyAllotmentFiltersAndRedraw);
+        document.getElementById('filter-allot-gender').addEventListener('change', applyAllotmentFiltersAndRedraw);
+
+        // Initial table render
+        applyAllotmentFiltersAndRedraw();
+    }
+
+    /**
+     * Reads allotment filters, filters the master list, and calls renderAllotmentTable().
+     */
+    function applyAllotmentFiltersAndRedraw() {
+        const status = document.getElementById('filter-allot-status').value;
+        const category = document.getElementById('filter-allot-category').value;
+        const gender = document.getElementById('filter-allot-gender').value;
+
+        let filteredList = [...CURRENT_ALLOTMENT_LIST]; // Start from master list
+
+        if (status && status !== 'ALL') {
+            filteredList = filteredList.filter(c => c.Status === status);
+        }
+        if (category && category !== 'ALL') {
+            filteredList = filteredList.filter(c => c.Category === category);
+        }
+        if (gender && gender !== 'ALL') {
+            filteredList = filteredList.filter(c => c.Gender === gender);
+        }
+        
+        // Note: The list is already pre-sorted by the backend (Allotted first, then by score)
+        FILTERED_ALLOTMENT_LIST = filteredList;
+        renderAllotmentTable(FILTERED_ALLOTMENT_LIST);
+    }
+
+    /**
+     * Renders *only* the HTML table for the allotment list.
+     */
+    function renderAllotmentTable(candidates) {
+        const tableContainer = document.getElementById('allotment-table-container');
+        if (!tableContainer) return; // Guard clause
+
+        // Define headers (excluding hidden ones)
+        const headers = Object.keys(candidates[0] || {}).filter(h => h !== 'Gender' && h !== 'Category');
+        
+        let headerHtml = "<tr>" + headers.map(h => `<th>${h}</th>`).join("") + "</tr>";
+
+        let rowsHtml = candidates.map((candidate) => {
+            // Highlight allotted rows
+            const rowClass = candidate.Status === 'Allotted' ? 'class="top-pick"' : '';
+            
+            const cellsHtml = headers.map(header => {
+                let value = candidate[header];
+                if (header.includes('%')) {
+                    value = `${value}%`; // Add % sign
+                }
+                 if (header === 'Status' && value === 'Waitlisted') {
+                    return `<td style="color: var(--text-light);">${value}</td>`; // Style waitlisted text
+                }
+                 if (header === 'Allotted Job' && value === 'N/A') {
+                     return `<td style="color: var(--text-light);">${value}</td>`;
+                 }
+                return `<td>${value}</td>`;
+            }).join("");
+
+            return `<tr ${rowClass}>${cellsHtml}</tr>`;
+        }).join("");
+
+        tableContainer.innerHTML = `
+            <table class="results-table">
+                <thead>${headerHtml}</thead>
+                <tbody>${rowsHtml || `<tr><td colspan="${headers.length}">No candidates match the current filters.</td></tr>`}</tbody>
+            </table>
+        `;
     }
 
     // --- Finally, start the app! ---
