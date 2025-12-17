@@ -1,0 +1,8 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age,score,status
+S509,Sara,B.Sc,Python;Data Analysis;ML,Chennai,OBC,No,9.7,F,21,29.4,Allocated - OBC
+S510,Pranjal,B.Sc,Python;Data Analysis;ML,Chennai,OBC,Yes,9.9,F,23,28.8,Allocated - OBC
+S508,Sagar,B.Sc,Python;Data Analysis;ML,Chennai,OBC,No,9.1,M,21,28.2,Allocated - OBC
+S513,Raha,B.Sc,Python;Data Analysis;ML,Chennai,OBC,No,8.9,F,24,27.8,Allocated - OBC
+S512,Priyal,B.Sc,Python;Data Analysis;ML,Chennai,OBC,No,8.8,F,22,27.6,Allocated - OBC
+S507,Samar,B.Sc,Python;Data Analysis;ML,Chennai,OBC,Yes,7.1,M,23,23.2,Allocated - OBC
+S511,Pranali,B.Sc,Python;Data Analysis;ML,Chennai,OBC,No,5.9,F,23,21.8,Allocated - OBC

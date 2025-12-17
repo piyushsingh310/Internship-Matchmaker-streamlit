@@ -1,0 +1,5 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age,score,status
+S502,Jayesh,B.Sc,Python;Data Analysis;ML,Chennai,SC,No,9.2,M,23,28.4,Allocated - SC
+S501,Kia,B.Sc,Python;Data Analysis;ML,Chennai,SC,No,9.1,F,23,28.2,Allocated - SC
+S019,Divya,B.Sc,Python;Data Analysis;ML,Chennai,SC,No,8.9,F,23,27.8,Allocated - SC
+S033,Dev,B.Sc,ML;Data Analysis;Python,Chennai,SC,No,8.8,M,24,27.6,Allocated - SC

@@ -1,0 +1,4 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age,score,status
+S036,Avni,B.Tech,Python;SQL;ML,Delhi,OBC,No,8.9,F,22,25.8,Allocated - Female
+S007,Simran,B.Tech,Python;C++;React,Delhi,OBC,No,8.7,F,24,24.4,Allocated - Female
+S001,Aditi,B.Tech,Python;SQL;ML,Delhi,Rural,No,8.2,F,22,24.4,Allocated - Female

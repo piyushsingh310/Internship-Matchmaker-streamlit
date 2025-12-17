@@ -1,0 +1,5 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age,score,status
+S504,Krishna,B.Sc,Python;Data Analysis;ML,Chennai,ST,Yes,8.1,M,23,25.2,Allocated - ST
+S506,Kanchan,B.Sc,Python;Data Analysis;ML,Chennai,ST,No,7.6,F,23,25.2,Allocated - ST
+S503,Krish,B.Sc,Python;Data Analysis;ML,Chennai,ST,No,7.1,M,23,24.2,Allocated - ST
+S505,Kamal,B.Sc,Python;Data Analysis;ML,Chennai,ST,No,6.2,M,24,22.4,Allocated - ST

@@ -1,0 +1,531 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age
+S001,Aditi,B.Tech,Python;SQL;ML,Delhi,Rural,No,8.2,F,22
+S002,Raj,MBA,Finance;Excel;Stats,Mumbai,SC,Yes,7.5,M,24
+S003,Priya,B.Sc,Data Analysis;Python;Excel,Bangalore,OBC,No,8.9,F,21
+S004,Karan,M.Tech,AI;ML;Cloud,Hyderabad,General,Yes,9.1,M,23
+S005,Neha,B.Com,Finance;Excel;Marketing,Mumbai,Rural,No,7.8,F,22
+S006,Arjun,MCA,Java;SQL;Cybersecurity,Pune,ST,Yes,8.4,M,23
+S007,Simran,B.Tech,Python;C++;React,Delhi,OBC,No,8.7,F,24
+S008,Vivek,MBA,Finance;Stats;Excel,Delhi,SC,No,7.2,M,22
+S009,Ananya,B.Sc,Data Analysis;ML;Python,Mumbai,pwd,Yes,9.0,F,23
+S010,Rohit,B.Tech,Cloud;Networking;AI,Bangalore,General,No,8.3,M,21
+S011,Ishita,MCA,Java;SQL;Python,Hyderabad,OBC,Yes,8.5,F,22
+S012,Sahil,B.Com,Finance;Marketing;Excel,Chennai,General,No,7.9,M,24
+S013,Meera,B.Sc,Stats;Data Analysis;Python,Pune,SC,Yes,8.6,F,23
+S014,Nikhil,B.Tech,AI;ML;Cloud,Delhi,Rural,No,9.2,M,22
+S015,Shreya,MBA,Marketing;Excel;Finance,Delhi,ST,No,7.4,F,21
+S016,Kabir,B.Tech,Python;SQL;C++,Delhi,OBC,Yes,8.8,M,24
+S017,Pooja,MCA,Cybersecurity;Networking;Java,Bangalore,General,No,8.1,F,23
+S018,Manav,B.Com,Finance;Excel;Marketing,Hyderabad,Rural,Yes,7.6,M,22
+S019,Divya,B.Sc,Python;Data Analysis;ML,Chennai,SC,No,8.9,F,23
+S020,Aman,B.Tech,Cloud;AI;React,Pune,OBC,No,8.0,M,21
+S021,Riya,MBA,Finance;Stats;Excel,Kolkata,Rural,Yes,7.3,F,22
+S022,Akash,B.Tech,Python;C++;SQL,Delhi,General,No,8.4,M,23
+S023,Tanya,M.Sc,Data Analysis;Python;ML,Mumbai,ST,No,8.5,F,24
+S024,Varun,M.Tech,AI;Cloud;Networking,Bangalore,OBC,Yes,9.0,M,23
+S025,Sanya,B.Com,Finance;Excel;Marketing,Hyderabad,Rural,No,7.7,F,22
+S026,Yash,B.Tech,Python;SQL;C++,Chennai,General,No,8.2,M,23
+S027,Rajesh,MCA,Java;Cybersecurity;Networking,Pune,SC,Yes,8.6,M,21
+S028,Aditya,B.Tech,ML;AI;Cloud,Kolkata,OBC,No,8.9,M,22
+S029,Sneha,B.Sc,Python;Stats;Data Analysis,Delhi,pwd,No,9.1,F,24
+S030,Rakesh,MBA,Excel;Finance;Marketing,Mumbai,Rural,Yes,7.5,M,23
+S031,Harsh,B.Tech,C++;SQL;React,Bangalore,General,No,8.3,M,22
+S032,Anjali,MCA,Java;Python;Cybersecurity,Hyderabad,OBC,Yes,8.7,F,23
+S033,Dev,B.Sc,ML;Data Analysis;Python,Chennai,SC,No,8.8,M,24
+S034,Maya,B.Tech,Cloud;AI;Networking,Pune,General,No,8.4,F,21
+S035,Kunal,B.Com,Finance;Excel;Marketing,Kolkata,Rural,Yes,7.6,M,23
+S036,Avni,B.Tech,Python;SQL;ML,Delhi,OBC,No,8.9,F,22
+S037,Parth,M.Tech,AI;Cloud;C++,Mumbai,General,Yes,9.2,M,24
+S038,Radhika,B.Sc,Data Analysis;Stats;Python,Bangalore,ST,No,8.8,F,22
+S039,Samir,MCA,Java;Networking;Cybersecurity,Hyderabad,Rural,No,8.1,M,23
+S040,Vikram,B.Com,Finance;Excel;Marketing,Chennai,OBC,Yes,7.7,M,22
+S041,Ira,B.Tech,Python;C++;AI,Pune,General,No,8.6,F,23
+S042,Laksh,B.Sc,Stats;Data Analysis;Python,Kolkata,SC,No,8.5,M,24
+S043,Dhruv,M.Tech,Cloud;ML;AI,Delhi,Rural,Yes,9.0,M,22
+S044,Amit,B.Com,Finance;Excel;Marketing,Mumbai,OBC,No,7.8,M,23
+S045,Raman,B.Tech,SQL;Python;C++,Bangalore,General,No,8.3,M,22
+S046,Suresh,MCA,Cybersecurity;Java;Networking,Hyderabad,ST,Yes,8.4,M,25
+S047,Aryan,M.Tech,AI;Cloud;ML,Chennai,Rural,No,9.1,M,21
+S048,Gaurav,B.Sc,Python;Data Analysis;Stats,Pune,OBC,Yes,8.7,M,23
+S049,Vani,B.Com,Finance;Excel;Marketing,Kolkata,General,No,7.9,F,22
+S050,Tarun,B.Tech,C++;Python;SQL,Delhi,SC,No,8.5,M,25
+S051,Jayaa,B.Tech,Python;ML;Cybersecurity,Mumbai,Rural,No,7.7,F,23
+S052,Momo,B.Com,Finance;Stats;Marketing,Mumbai,General,No,6.5,F,22
+S053,Danielle,B.Tech,Python;C++;Cloud,Mumbai,OBC,Yes,8.7,F,24
+S054,Angel,BCA,Python;React;SQL,Mumbai,OBC,Yes,8.2,F,21
+S055,Joshua,BCA,Cybersecurity;Cloud;Finance,Delhi,OBC,No,7.5,M,21
+S056,Jeffrey,B.Com,SQL;React;Excel,Delhi,SC,No,8.3,M,25
+S057,Jill,BCA,Java;SQL;Excel,Delhi,Rural,No,9.0,F,24
+S058,Erica,B.Sc,C++;SQL;Python,Mumbai,SC,Yes,9.1,M,23
+S059,Patricia,B.Com,Networking;Stats;Data Analysis,Mumbai,SC,No,7.1,F,25
+S060,Christopher,B.Tech,Cybersecurity;Stats;ML,Mumbai,OBC,No,7.6,M,25
+S061,Robert,B.Com,Marketing;Finance;React,Delhi,OBC,Yes,8.9,F,22
+S062,Anthony,B.Tech,AI;Cybersecurity;C++,Bangalore,OBC,No,7.7,F,21
+S063,Jeffery,B.Com,ML;AI;C++,Bangalore,pwd,No,9.2,F,22
+S064,William,B.Sc,ML;Java;Networking,Delhi,General,Yes,7.0,M,25
+S065,Anthony,BCA,Cybersecurity;SQL;Excel,Hyderabad,Rural,No,8.1,M,25
+S066,James,B.Tech,Stats;Java;Finance,Bangalore,pwd,No,6.8,F,21
+S067,Debra,BCA,Python;C++;Marketing,Bangalore,Rural,Yes,8.0,M,25
+S068,Amy,B.Com,Marketing;Stats;Java,Mumbai,OBC,No,8.8,F,24
+S069,Jeffrey,B.Com,Networking;Python;SQL,Bangalore,SC,Yes,6.7,M,23
+S070,Bridget,BCA,Marketing;SQL;Finance,Mumbai,OBC,No,9.3,M,22
+S071,Lisa,BCA,AI;Java;Finance,Mumbai,pwd,No,7.7,F,23
+S072,Adam,BCA,SQL;AI;Marketing,Delhi,SC,Yes,8.3,M,24
+S073,Linda,B.Sc,Python;SQL;C++,Delhi,OBC,Yes,9.2,F,24
+S074,Helen,B.Sc,Cloud;Stats;Networking,Mumbai,Rural,Yes,8.7,F,21
+S075,Matthew,BCA,Finance;Excel;AI,Delhi,General,No,7.6,F,23
+S076,Eric,B.Tech,Stats;React;Marketing,Delhi,General,No,8.7,M,21
+S077,Susan,B.Sc,AI;Java;Networking,Mumbai,ST,Yes,7.3,M,20
+S078,Matthew,BCA,Finance;Marketing;Java,Delhi,General,Yes,9.4,M,21
+S079,Christopher,BCA,Networking;React;AI,Hyderabad,General,Yes,7.6,F,22
+S080,Colin,BCA,Cloud;Excel;C++,Hyderabad,OBC,Yes,7.4,M,24
+S081,Melanie,B.Tech,C++;Data Analysis;Python,Delhi,Rural,No,8.0,M,20
+S082,Cassandra,B.Tech,Marketing;ML;SQL,Delhi,pwd,Yes,7.7,M,24
+S083,Lindsay,B.Tech,Cybersecurity;SQL;Excel,Bangalore,SC,Yes,8.5,F,21
+S084,Jessica,B.Com,Excel;ML;Stats,Bangalore,ST,No,9.3,M,20
+S085,Amanda,BCA,Cybersecurity;React;SQL,Delhi,Rural,Yes,8.0,M,22
+S086,Teresa,B.Tech,React;AI;Data Analysis,Bangalore,OBC,No,9.0,F,24
+S087,Nicholas,B.Tech,Stats;Marketing;Java,Bangalore,pwd,Yes,9.3,M,22
+S088,Andrea,B.Tech,React;SQL;C++,Mumbai,SC,No,8.3,F,21
+S089,Maria,B.Com,Java;Networking;Cloud,Delhi,General,No,9.0,M,20
+S090,Christine,B.Com,Finance;ML;Stats,Bangalore,OBC,No,8.2,F,24
+S091,Michelle,B.Tech,SQL;React;C++,Mumbai,Rural,Yes,9.0,M,23
+S092,Barbara,B.Sc,Python;Cloud;Data Analysis,Delhi,SC,Yes,8.5,M,22
+S093,Janet,BCA,Cybersecurity;C++;ML,Mumbai,OBC,Yes,9.1,M,21
+S094,Brandon,B.Com,Finance;Excel;React,Mumbai,SC,Yes,8.9,M,23
+S095,Jeremy,B.Tech,Marketing;Networking;AI,Mumbai,ST,No,7.4,M,21
+S096,Keith,B.Tech,Stats;AI;Excel,Bangalore,SC,Yes,9.4,F,22
+S097,Christopher,BCA,Stats;Marketing;Java,Bangalore,General,Yes,9.1,F,21
+S098,Jesse,B.Com,Python;SQL;Cybersecurity,Hyderabad,SC,No,7.8,M,23
+S099,Craig,B.Sc,Cloud;Python;C++,Hyderabad,General,Yes,7.6,M,25
+S100,Joshua,B.Com,Cybersecurity;Data Analysis;Stats,Delhi,pwd,No,8.0,F,22
+S101,Cynthia,BCA,C++;Cloud;Java,Mumbai,OBC,No,8.5,F,25
+S102,Michael,B.Sc,Cybersecurity;React;Cloud,Hyderabad,Rural,Yes,7.4,M,23
+S103,Mitchell,B.Com,Networking;React;Marketing,Mumbai,Rural,No,8.9,M,25
+S104,Jason,B.Tech,Cloud;Java;Stats,Bangalore,General,Yes,8.5,M,21
+S105,Joseph,B.Sc,Python;React;AI,Hyderabad,Rural,Yes,7.9,M,25
+S106,Sharon,BCA,Networking;Excel;AI,Mumbai,pwd,Yes,9.2,M,23
+S107,Deborah,B.Sc,ML;Finance;C++,Hyderabad,General,Yes,9.3,M,23
+S108,Chelsea,B.Sc,Finance;Networking;Stats,Bangalore,ST,No,9.0,F,21
+S109,George,BCA,Networking;Cloud;Finance,Mumbai,pwd,No,8.8,F,25
+S110,Jessica,B.Sc,Cloud;Networking;SQL,Bangalore,OBC,No,7.5,M,21
+S111,Frank,B.Sc,AI;Excel;C++,Mumbai,pwd,Yes,6.7,F,22
+S112,Noah,BCA,Excel;Python;AI,Hyderabad,ST,Yes,9.1,F,23
+S113,Veronica,B.Tech,Data Analysis;Cloud;Finance,Hyderabad,ST,Yes,8.0,F,23
+S114,Danielle,BCA,Python;Excel;Data Analysis,Hyderabad,pwd,Yes,9.0,M,24
+S115,Angela,B.Tech,React;Excel;Cybersecurity,Delhi,General,No,6.9,F,21
+S116,Gabrielle,B.Tech,Cloud;Excel;Data Analysis,Mumbai,ST,No,7.5,F,22
+S117,Megan,BCA,Cloud;Marketing;SQL,Hyderabad,General,Yes,9.5,F,21
+S118,Kimberly,B.Tech,Finance;Stats;Python,Delhi,OBC,Yes,9.0,M,21
+S119,Jeremy,B.Sc,Networking;Stats;SQL,Mumbai,ST,No,8.8,M,24
+S120,Antonio,B.Tech,Finance;Marketing;ML,Bangalore,General,Yes,9.3,F,23
+S121,Leslie,B.Sc,SQL;Cybersecurity;C++,Mumbai,General,No,9.1,M,24
+S122,Joseph,B.Tech,Data Analysis;Java;Excel,Bangalore,General,No,6.5,F,23
+S123,Jason,B.Tech,Excel;Data Analysis;Stats,Hyderabad,pwd,Yes,7.8,F,24
+S124,Sherri,BCA,Networking;Excel;C++,Bangalore,SC,Yes,9.0,M,22
+S125,Nancy,BCA,AI;Finance;Networking,Hyderabad,SC,Yes,8.0,F,21
+S126,Leonard,BCA,AI;Data Analysis;Finance,Bangalore,SC,No,9.1,F,24
+S127,Diana,B.Tech,Python;AI;SQL,Delhi,pwd,No,8.0,F,22
+S128,Randall,BCA,Stats;C++;Networking,Hyderabad,General,Yes,7.4,F,25
+S129,Robin,B.Sc,Cloud;Stats;Cybersecurity,Bangalore,ST,No,7.8,F,22
+S130,Stephen,BCA,Cloud;React;Marketing,Mumbai,General,Yes,7.4,M,21
+S131,Joseph,B.Sc,C++;Networking;Cloud,Bangalore,General,Yes,7.4,F,21
+S132,John,B.Com,Python;C++;Java,Mumbai,SC,Yes,9.4,F,25
+S133,Anna,B.Sc,Stats;Marketing;Finance,Hyderabad,General,Yes,8.2,F,23
+S134,Jose,BCA,Data Analysis;ML;Python,Bangalore,ST,Yes,9.0,F,23
+S135,Brenda,B.Tech,Cybersecurity;Stats;Marketing,Delhi,OBC,Yes,8.9,F,23
+S136,Rachael,B.Sc,SQL;Java;Finance,Hyderabad,Rural,Yes,8.8,F,23
+S137,Reginald,BCA,Cloud;Marketing;Cybersecurity,Hyderabad,SC,Yes,8.3,M,21
+S138,Jeffrey,B.Sc,Cloud;Stats;SQL,Mumbai,OBC,Yes,8.2,M,21
+S139,Whitney,BCA,Networking;C++;Cybersecurity,Hyderabad,SC,Yes,7.2,F,25
+S140,William,BCA,SQL;Stats;AI,Bangalore,pwd,Yes,7.8,M,25
+S141,Christopher,B.Sc,React;Cloud;ML,Delhi,General,Yes,8.9,F,23
+S142,Brandon,B.Tech,Networking;C++;Python,Delhi,SC,No,9.8,M,23
+S143,Daniel,B.Com,Cybersecurity;Cloud;Python,Delhi,OBC,Yes,9.5,F,24
+S144,Courtney,B.Tech,Finance;React;ML,Hyderabad,Rural,No,9.2,M,24
+S145,Laura,BCA,Stats;Marketing;Networking,Delhi,ST,No,7.7,F,25
+S146,Robert,B.Tech,Marketing;ML;Data Analysis,Hyderabad,pwd,No,7.4,F,24
+S147,Bryan,B.Tech,Networking;SQL;Data Analysis,Bangalore,SC,Yes,9.4,F,24
+S148,Patrick,B.Tech,Stats;Marketing;Java,Hyderabad,ST,Yes,7.1,F,24
+S149,Wendy,BCA,Stats;Networking;Finance,Delhi,OBC,No,8.1,F,23
+S150,Allison,BCA,SQL;Python;Stats,Mumbai,pwd,Yes,7.4,M,24
+S151,Tasha,BCA,SQL;AI;React,Hyderabad,General,Yes,8.0,F,24
+S152,Michelle,B.Com,Excel;Marketing;Networking,Hyderabad,OBC,No,8.2,F,21
+S153,Alexander,B.Sc,Marketing;SQL;Cloud,Hyderabad,SC,No,9.0,F,25
+S154,Jennifer,B.Com,Marketing;Cybersecurity;React,Hyderabad,OBC,No,8.1,F,22
+S155,Erin,BCA,Networking;Data Analysis;AI,Mumbai,Rural,No,7.2,F,20
+S156,Amanda,B.Com,C++;Networking;React,Hyderabad,ST,Yes,8.0,M,21
+S157,Joseph,B.Com,Marketing;SQL;Networking,Delhi,Rural,No,6.5,M,23
+S158,Danielle,B.Sc,SQL;Networking;Finance,Bangalore,SC,No,8.4,F,25
+S159,Daniel,BCA,Data Analysis;Stats;C++,Hyderabad,Rural,Yes,8.4,M,25
+S160,Ryan,B.Com,AI;C++;SQL,Hyderabad,General,Yes,7.8,F,21
+S161,Shawn,B.Tech,Data Analysis;Finance;Python,Bangalore,SC,No,7.8,M,24
+S162,Stephanie,BCA,Cybersecurity;Stats;Finance,Mumbai,OBC,Yes,6.7,F,24
+S163,Nancy,B.Sc,Networking;Cybersecurity;ML,Mumbai,ST,No,7.9,M,23
+S164,Jose,B.Com,Stats;Java;ML,Delhi,ST,No,9.5,F,25
+S165,Vincent,BCA,C++;Cloud;Networking,Bangalore,OBC,No,9.1,M,21
+S166,Guy,BCA,Cybersecurity;Data Analysis;React,Bangalore,pwd,No,6.6,F,22
+S167,Rita,B.Tech,Cybersecurity;Marketing;Stats,Delhi,Rural,No,9.0,F,21
+S168,Monica,B.Com,AI;Stats;React,Bangalore,pwd,Yes,8.4,M,22
+S169,Kenneth,BCA,Python;Cybersecurity;Data Analysis,Mumbai,General,No,7.5,F,21
+S170,Danielle,B.Sc,ML;Finance;Java,Bangalore,Rural,No,9.0,F,23
+S171,Chelsea,B.Com,C++;Marketing;Data Analysis,Delhi,ST,Yes,6.9,M,25
+S172,Eric,BCA,Marketing;Finance;Java,Bangalore,General,No,6.5,M,23
+S173,Kathryn,B.Com,Stats;C++;React,Bangalore,Rural,No,9.0,F,23
+S174,Amber,B.Sc,Networking;Python;Cybersecurity,Bangalore,Rural,Yes,8.4,F,25
+S175,Kimberly,B.Com,Stats;Excel;SQL,Mumbai,General,Yes,7.4,F,22
+S176,Alyssa,B.Tech,AI;Java;ML,Hyderabad,ST,No,8.5,F,24
+S177,Aaron,B.Sc,React;Excel;Stats,Delhi,ST,No,9.3,F,22
+S178,Mario,B.Com,AI;Networking;Marketing,Mumbai,SC,Yes,9.4,M,24
+S179,Andrew,B.Com,Python;Excel;Cloud,Mumbai,General,No,6.8,M,25
+S180,Sarah,B.Tech,Python;Finance;Data Analysis,Mumbai,OBC,Yes,6.7,M,24
+S181,Natasha,B.Sc,Marketing;React;AI,Bangalore,OBC,Yes,7.3,M,21
+S182,Marie,B.Com,Finance;ML;SQL,Delhi,OBC,Yes,7.6,M,24
+S183,Kyle,B.Com,Python;ML;Cloud,Delhi,OBC,No,8.1,M,23
+S184,Brian,BCA,Finance;Data Analysis;Java,Delhi,ST,Yes,9.3,M,25
+S185,Natalie,B.Com,Networking;Stats;Python,Delhi,ST,No,7.8,M,23
+S186,Stacey,BCA,SQL;React;Data Analysis,Mumbai,General,Yes,7.3,F,23
+S187,Christopher,B.Com,Networking;Java;Cybersecurity,Hyderabad,General,Yes,9.1,M,23
+S188,Todd,BCA,React;AI;Excel,Bangalore,ST,No,7.7,M,22
+S189,Chad,BCA,Data Analysis;Stats;Cloud,Bangalore,OBC,No,6.7,M,21
+S190,Kathleen,BCA,SQL;C++;Marketing,Bangalore,OBC,Yes,8.3,F,25
+S191,Katie,B.Tech,Excel;Data Analysis;Stats,Hyderabad,pwd,Yes,9.4,F,22
+S192,David,B.Tech,Cybersecurity;Java;AI,Mumbai,pwd,No,7.2,M,22
+S193,Thomas,B.Com,SQL;Finance;Cloud,Mumbai,ST,Yes,8.3,M,22
+S194,Andrea,B.Sc,Cloud;C++;Finance,Bangalore,SC,No,6.5,M,24
+S195,Joseph,BCA,SQL;ML;C++,Delhi,General,Yes,7.6,F,22
+S196,Monique,B.Sc,Data Analysis;Cloud;C++,Bangalore,Rural,Yes,9.2,M,21
+S197,Rodney,B.Tech,Stats;SQL;Cloud,Hyderabad,pwd,No,8.0,F,23
+S198,Jason,B.Com,AI;Finance;Java,Delhi,SC,No,6.8,F,24
+S199,Amber,B.Com,Python;AI;Excel,Delhi,General,Yes,7.4,M,21
+S200,Jessica,B.Com,Cloud;Data Analysis;SQL,Delhi,ST,No,7.0,F,24
+S201,James,B.Sc,Java;React;Stats,Bangalore,General,No,9.1,M,23
+S202,Larry,B.Tech,Networking;SQL;Data Analysis,Hyderabad,Rural,No,8.6,F,22
+S203,Wanda,B.Tech,Excel;Python;Data Analysis,Mumbai,Rural,No,9.0,F,20
+S204,Debra,BCA,Marketing;SQL;AI,Hyderabad,Rural,No,8.1,F,22
+S205,Samuel,B.Com,AI;Data Analysis;Finance,Mumbai,General,Yes,8.1,M,22
+S206,Zachary,B.Com,C++;Marketing;Stats,Mumbai,OBC,Yes,6.9,M,21
+S207,David,B.Sc,Finance;React;Stats,Delhi,OBC,No,7.9,F,25
+S208,Jeffrey,B.Com,Marketing;Stats;Data Analysis,Mumbai,ST,Yes,7.9,M,22
+S209,Matthew,B.Tech,Data Analysis;Java;SQL,Bangalore,ST,No,6.6,F,22
+S210,Brianna,B.Tech,Stats;Marketing;SQL,Hyderabad,ST,Yes,7.8,M,22
+S211,Jerry,BCA,Java;ML;Python,Hyderabad,General,No,9.4,M,24
+S212,Jeffrey,B.Sc,Python;AI;C++,Hyderabad,ST,Yes,7.6,F,23
+S213,Chad,BCA,Finance;Data Analysis;Stats,Delhi,pwd,No,6.7,M,24
+S214,Crystal,BCA,Cloud;React;C++,Mumbai,SC,Yes,8.2,M,22
+S215,Jeremy,B.Com,Stats;C++;React,Hyderabad,OBC,Yes,7.4,F,25
+S216,Rebecca,B.Com,Marketing;ML;Stats,Delhi,pwd,No,8.0,M,22
+S217,Michele,B.Com,ML;AI;Data Analysis,Hyderabad,OBC,Yes,9.5,M,22
+S218,Chad,B.Com,Marketing;Finance;SQL,Delhi,pwd,No,9.1,M,24
+S219,John,BCA,ML;React;Marketing,Mumbai,pwd,No,6.6,F,25
+S220,Elizabeth,B.Sc,Networking;Cybersecurity;Cloud,Hyderabad,OBC,Yes,7.4,F,21
+S221,Jason,B.Com,Stats;Cybersecurity;Networking,Hyderabad,SC,No,8.0,F,21
+S222,David,B.Sc,Finance;Cybersecurity;ML,Bangalore,General,No,9.1,M,25
+S223,Selena,B.Tech,Cloud;SQL;Finance,Mumbai,SC,No,9.2,M,23
+S224,Ashley,B.Tech,React;AI;Networking,Bangalore,General,No,6.7,F,21
+S225,Thomas,BCA,SQL;Data Analysis;AI,Delhi,SC,Yes,9.0,F,21
+S226,Kristen,B.Sc,Python;Cloud;Networking,Mumbai,pwd,No,7.8,M,21
+S227,Lindsey,B.Tech,Cloud;AI;ML,Hyderabad,General,No,7.2,M,24
+S228,James,B.Sc,Excel;Stats;Finance,Hyderabad,General,Yes,9.0,F,24
+S229,Collin,B.Tech,Stats;Java;Cybersecurity,Mumbai,pwd,Yes,7.4,M,24
+S230,Raina,B.Com,AI;Cybersecurity;Excel,Mumbai,pwd,Yes,8.1,F,21
+S231,Rodney,B.Tech,Excel;Marketing;Networking,Delhi,pwd,No,9.4,F,25
+S232,Stuart,B.Tech,Data Analysis;Finance;SQL,Bangalore,OBC,Yes,8.8,F,21
+S233,Jessica,B.Tech,Data Analysis;Java;React,Mumbai,pwd,No,9.4,F,23
+S234,Emily,B.Sc,Finance;ML;SQL,Hyderabad,General,No,7.1,M,24
+S235,Tracey,B.Com,React;Cloud;Java,Hyderabad,Rural,No,7.3,M,22
+S236,Corey,B.Com,Marketing;Finance;Python,Bangalore,SC,Yes,8.9,F,23
+S237,Richard,BCA,React;Excel;Data Analysis,Mumbai,ST,No,7.6,F,24
+S238,Matthew,BCA,SQL;Excel;Cybersecurity,Mumbai,Rural,No,7.5,M,22
+S239,Michelle,B.Com,Cloud;Networking;Cybersecurity,Hyderabad,OBC,No,7.6,M,25
+S240,John,B.Com,Cybersecurity;Excel;Cloud,Delhi,General,No,7.6,M,21
+S241,James,B.Sc,Marketing;Cybersecurity;Stats,Hyderabad,General,Yes,6.7,F,22
+S242,Shane,BCA,Cybersecurity;Python;React,Mumbai,pwd,No,9.3,F,23
+S243,Robert,B.Tech,Cybersecurity;ML;Java,Bangalore,ST,No,8.4,M,23
+S244,Joshua,B.Tech,C++;ML;Networking,Hyderabad,Rural,Yes,7.3,F,25
+S245,John,BCA,AI;Cybersecurity;Cloud,Hyderabad,OBC,Yes,6.9,M,23
+S246,Sandra,B.Sc,React;C++;Networking,Delhi,pwd,No,8.5,M,24
+S247,Scott,B.Com,React;Cloud;ML,Mumbai,SC,Yes,6.9,M,21
+S248,Michelle,B.Sc,Finance;Networking;Python,Bangalore,Rural,No,7.9,M,24
+S249,Andrea,B.Tech,SQL;Cloud;Excel,Hyderabad,Rural,No,8.8,M,21
+S250,Brent,B.Com,Stats;SQL;Networking,Hyderabad,pwd,No,6.9,M,21
+S251,Yvette,BCA,Java;Marketing;Python,Delhi,Rural,Yes,7.4,M,22
+S252,Mary,B.Sc,Data Analysis;Java;Cloud,Delhi,SC,Yes,8.4,F,21
+S253,Andrew,BCA,AI;SQL;Cybersecurity,Delhi,ST,Yes,7.2,M,23
+S254,Taylor,B.Sc,Stats;Networking;Cloud,Bangalore,OBC,No,9.1,F,24
+S255,Sean,B.Sc,Data Analysis;Cybersecurity;Java,Hyderabad,General,Yes,6.8,F,24
+S256,Brittany,B.Tech,Networking;ML;Cloud,Bangalore,OBC,No,6.7,M,21
+S257,Veronica,BCA,ML;Python;Java,Mumbai,OBC,Yes,9.3,M,24
+S258,Adam,B.Sc,C++;Python;Finance,Hyderabad,SC,No,9.3,M,23
+S259,Russell,B.Tech,AI;Finance;Marketing,Bangalore,OBC,No,6.7,F,23
+S260,Heather,BCA,Excel;Marketing;Java,Bangalore,SC,Yes,9.2,F,23
+S261,Christopher,B.Sc,Data Analysis;Excel;Cybersecurity,Bangalore,ST,Yes,6.9,F,22
+S262,Mark,B.Com,Networking;Cybersecurity;Finance,Bangalore,OBC,Yes,8.7,F,25
+S263,Matthew,B.Tech,SQL;Cybersecurity;AI,Bangalore,pwd,Yes,8.5,M,23
+S264,Shawn,BCA,Java;ML;Cloud,Hyderabad,SC,No,6.6,M,21
+S265,Ronald,BCA,Stats;Marketing;AI,Mumbai,Rural,No,7.5,M,24
+S266,Erik,BCA,Python;Excel;ML,Hyderabad,pwd,No,7.0,F,24
+S267,Tiffany,B.Sc,Stats;Finance;Python,Bangalore,ST,Yes,8.0,F,25
+S268,Cynthia,B.Com,C++;ML;SQL,Bangalore,General,Yes,9.2,F,24
+S269,Daniel,B.Com,C++;SQL;AI,Mumbai,General,No,7.3,M,24
+S270,Lisa,B.Com,C++;React;Python,Delhi,Rural,Yes,7.5,F,22
+S271,Samantha,B.Com,Networking;Data Analysis;Finance,Bangalore,Rural,No,8.3,M,25
+S272,Earl,B.Com,SQL;Java;React,Delhi,SC,Yes,6.5,M,23
+S273,William,BCA,ML;Python;C++,Delhi,OBC,No,9.2,M,24
+S274,Christina,B.Com,Java;Networking;SQL,Delhi,pwd,No,6.6,M,24
+S275,Gary,B.Com,Cybersecurity;Python;Java,Hyderabad,OBC,Yes,6.7,F,22
+S276,Vanessa,B.Tech,Excel;Python;Marketing,Mumbai,General,Yes,8.1,M,22
+S277,Faith,B.Com,React;SQL;Data Analysis,Delhi,pwd,Yes,6.7,M,23
+S278,Colleen,B.Sc,React;Finance;SQL,Bangalore,SC,No,8.3,M,25
+S279,Ashley,B.Tech,AI;Stats;Python,Hyderabad,Rural,Yes,6.7,M,23
+S280,Donald,B.Sc,React;Excel;AI,Hyderabad,OBC,Yes,8.9,F,25
+S281,Holly,B.Com,Cybersecurity;C++;React,Hyderabad,General,No,8.4,M,25
+S282,Karen,B.Sc,Stats;Finance;React,Mumbai,OBC,Yes,8.1,F,22
+S283,Lance,B.Com,React;Networking;Python,Mumbai,OBC,No,8.3,F,23
+S284,Shannon,B.Com,Excel;SQL;Python,Bangalore,ST,No,9.5,F,22
+S285,Austin,B.Sc,C++;AI;Marketing,Bangalore,General,No,7.2,M,21
+S286,Robert,B.Tech,Cloud;Finance;Excel,Mumbai,ST,Yes,6.8,F,23
+S287,Nicholas,B.Com,SQL;ML;Cybersecurity,Bangalore,Rural,No,8.4,F,21
+S288,Sandra,BCA,C++;Networking;Cloud,Bangalore,pwd,Yes,7.1,F,21
+S289,Jeffrey,B.Sc,Cybersecurity;React;Finance,Hyderabad,SC,No,7.2,F,25
+S290,April,B.Com,Marketing;Cybersecurity;Cloud,Delhi,Rural,No,8.5,M,23
+S291,Ashley,B.Sc,Data Analysis;SQL;Python,Hyderabad,Rural,No,7.1,F,24
+S292,Amy,BCA,Stats;C++;Cybersecurity,Hyderabad,OBC,Yes,9.2,F,22
+S293,Julie,B.Com,ML;Cloud;React,Bangalore,ST,No,8.3,F,21
+S294,William,B.Sc,Stats;Excel;Cloud,Mumbai,pwd,No,7.8,F,21
+S295,Amara,B.Com,Networking;AI;Data Analysis,Mumbai,ST,No,7.9,F,21
+S296,Debra,B.Com,Excel;C++;React,Delhi,pwd,No,9.5,M,24
+S297,Melissa,B.Com,Java;Finance;C++,Delhi,Rural,Yes,9.5,M,24
+S298,Elizabeth,BCA,Cybersecurity;Excel;Stats,Bangalore,OBC,No,7.3,M,21
+S299,Casey,B.Sc,SQL;ML;Cybersecurity,Mumbai,Rural,Yes,8.0,M,22
+S300,Joshua,B.Com,Java;Finance;C++,Bangalore,SC,Yes,6.7,M,23
+S301,Angela,B.Sc,Data Analysis;Excel;Python,Bangalore,Rural,No,8.7,M,25
+S302,Walter,B.Sc,Java;Cloud;C++,Hyderabad,ST,Yes,7.4,M,21
+S303,Christopher,B.Tech,Cybersecurity;Data Analysis;Python,Hyderabad,SC,No,8.8,M,25
+S304,Tabitha,BCA,Stats;React;Excel,Hyderabad,SC,Yes,6.7,F,25
+S305,Sarah,B.Sc,Stats;Networking;ML,Hyderabad,pwd,Yes,9.4,F,24
+S306,Dustin,B.Tech,ML;Finance;Stats,Hyderabad,ST,Yes,8.0,F,23
+S307,Kimberly,B.Com,Stats;Data Analysis;AI,Hyderabad,pwd,No,7.7,M,21
+S308,Tiffany,BCA,Excel;Python;Java,Bangalore,OBC,No,9.2,M,23
+S309,Aaron,B.Tech,Java;ML;Finance,Hyderabad,Rural,Yes,6.6,F,22
+S310,Caitlin,B.Tech,C++;Java;Stats,Mumbai,pwd,No,8.0,F,24
+S311,Lisa,B.Tech,C++;React;AI,Mumbai,SC,Yes,6.6,F,25
+S312,Juan,BCA,Stats;C++;AI,Bangalore,SC,No,7.7,M,22
+S313,Amy,B.Com,Stats;Data Analysis;Marketing,Delhi,OBC,Yes,8.7,M,22
+S314,Angel,B.Sc,React;AI;Stats,Bangalore,Rural,No,8.0,M,25
+S315,Nicholas,BCA,Cloud;Java;Stats,Mumbai,SC,Yes,7.5,F,21
+S316,Nicholas,B.Tech,Data Analysis;Finance;ML,Bangalore,SC,Yes,7.2,M,21
+S317,Jeffrey,B.Tech,Finance;Excel;Networking,Delhi,ST,No,8.4,F,25
+S318,Travis,BCA,Cybersecurity;Data Analysis;Marketing,Mumbai,ST,Yes,6.8,F,22
+S319,Meredith,BCA,React;C++;AI,Hyderabad,ST,No,9.3,F,21
+S320,Patrick,B.Tech,AI;Networking;Python,Bangalore,pwd,No,9.4,F,25
+S321,Karen,B.Sc,Networking;AI;Java,Delhi,ST,No,6.8,F,21
+S322,Lorraine,B.Com,AI;C++;Excel,Mumbai,ST,Yes,9.2,F,25
+S323,Jonathan,B.Tech,AI;Finance;Excel,Bangalore,OBC,Yes,8.7,F,25
+S324,Danielle,B.Tech,SQL;ML;Data Analysis,Hyderabad,ST,Yes,8.2,M,24
+S325,William,B.Tech,Data Analysis;C++;Python,Hyderabad,ST,No,7.4,M,23
+S326,Melissa,B.Com,AI;C++;Finance,Bangalore,General,No,7.0,F,22
+S327,Pedro,BCA,AI;Marketing;Cloud,Bangalore,General,No,8.9,M,21
+S328,Bradley,BCA,Java;Python;Finance,Delhi,General,No,8.5,M,24
+S329,Charles,B.Tech,Data Analysis;React;Networking,Hyderabad,pwd,Yes,9.1,M,25
+S330,Carl,BCA,SQL;ML;Java,Bangalore,pwd,No,6.9,F,23
+S331,Michelle,B.Sc,Excel;React;Marketing,Delhi,Rural,Yes,8.0,F,21
+S332,David,B.Tech,AI;Python;C++,Bangalore,ST,No,7.3,F,23
+S333,Todd,B.Tech,Stats;C++;Cloud,Mumbai,Rural,Yes,8.1,F,22
+S334,James,BCA,Marketing;ML;Finance,Bangalore,ST,Yes,9.0,M,23
+S335,Ruth,BCA,ML;Python;Java,Bangalore,Rural,No,7.7,F,22
+S336,Michael,B.Tech,Python;Marketing;ML,Mumbai,SC,Yes,6.8,F,24
+S337,Stephanie,BCA,Java;Cloud;AI,Bangalore,ST,Yes,6.7,M,25
+S338,Lynn,B.Tech,C++;Marketing;Cloud,Delhi,SC,No,9.3,F,25
+S339,Joseph,B.Tech,Networking;Stats;Finance,Delhi,General,Yes,9.3,M,25
+S340,Douglas,B.Tech,Stats;Data Analysis;Networking,Mumbai,ST,Yes,8.8,F,22
+S341,Lisa,B.Tech,Python;Cloud;C++,Hyderabad,ST,No,9.3,F,24
+S342,Aaron,B.Tech,React;ML;C++,Bangalore,pwd,No,8.6,F,25
+S343,William,B.Com,React;Networking;Cybersecurity,Mumbai,General,Yes,7.1,M,23
+S344,Tony,B.Tech,Cybersecurity;React;Data Analysis,Mumbai,Rural,No,9.5,M,25
+S345,Tom,B.Tech,SQL;Excel;Python,Delhi,pwd,No,7.3,M,22
+S346,Sheila,B.Sc,Networking;Finance;Python,Delhi,ST,Yes,7.3,M,25
+S347,Anthony,B.Sc,C++;SQL;Finance,Delhi,ST,No,7.2,F,24
+S348,Lindsey,B.Sc,C++;React;Finance,Hyderabad,ST,No,8.5,F,22
+S349,Paige,B.Com,C++;Networking;Cloud,Delhi,Rural,Yes,6.9,F,24
+S350,Randy,BCA,ML;Cybersecurity;AI,Hyderabad,OBC,Yes,7.0,F,25
+S351,Teresa,B.Tech,Stats;Cloud;Marketing,Delhi,ST,No,8.3,M,21
+S352,Nathan,B.Com,React;Excel;Cybersecurity,Mumbai,Rural,Yes,6.9,M,21
+S353,Steve,B.Sc,Finance;Excel;C++,Mumbai,pwd,Yes,8.3,F,23
+S354,Steven,B.Tech,React;SQL;AI,Hyderabad,General,Yes,9.4,F,23
+S355,Kristin,B.Com,Python;AI;ML,Bangalore,OBC,No,8.8,F,25
+S356,William,B.Tech,Java;C++;Python,Mumbai,Rural,No,6.9,M,21
+S357,Kathryn,B.Tech,Cloud;React;Finance,Bangalore,General,Yes,7.9,M,25
+S358,Alan,B.Com,Cybersecurity;Python;React,Bangalore,pwd,Yes,6.7,M,22
+S359,Michael,B.Com,Marketing;Stats;Cloud,Mumbai,SC,Yes,9.5,M,21
+S360,Mark,B.Sc,React;Java;Cybersecurity,Hyderabad,General,Yes,9.4,F,25
+S361,Terri,BCA,AI;Networking;Finance,Mumbai,SC,Yes,7.6,F,23
+S362,Victor,B.Com,Cloud;AI;Stats,Hyderabad,Rural,No,7.8,F,24
+S363,Joshua,B.Com,Networking;React;SQL,Hyderabad,SC,Yes,7.3,F,24
+S364,Daryl,B.Sc,SQL;ML;Data Analysis,Mumbai,Rural,Yes,9.4,F,22
+S365,Erika,BCA,React;AI;C++,Mumbai,pwd,Yes,7.9,M,24
+S366,Samuel,BCA,AI;Java;Python,Delhi,ST,No,7.9,F,22
+S367,Dustin,B.Tech,C++;Stats;Networking,Mumbai,Rural,No,7.7,M,21
+S368,Robert,B.Com,Java;Finance;C++,Mumbai,General,Yes,7.5,M,25
+S369,Kyle,BCA,Marketing;Networking;SQL,Bangalore,OBC,Yes,8.9,F,24
+S370,Mark,B.Tech,Stats;Marketing;Networking,Hyderabad,ST,No,8.3,F,22
+S371,Eugene,B.Tech,Stats;Marketing;Java,Bangalore,Rural,Yes,7.1,M,23
+S372,Brenda,B.Sc,React;Cloud;Marketing,Delhi,SC,No,7.3,M,24
+S373,Deborah,B.Com,Python;React;Excel,Delhi,OBC,Yes,9.5,F,25
+S374,Molly,B.Tech,React;Cloud;AI,Bangalore,OBC,Yes,7.4,F,24
+S375,Jennifer,B.Sc,Cybersecurity;ML;Cloud,Mumbai,General,Yes,8.3,F,25
+S376,Courtney,B.Tech,Excel;React;Finance,Hyderabad,pwd,Yes,8.6,F,24
+S377,Anthony,BCA,Networking;Marketing;Python,Delhi,General,No,7.2,F,22
+S378,Kim,B.Com,SQL;ML;Networking,Delhi,pwd,No,6.9,M,21
+S379,Whitney,B.Sc,React;Data Analysis;Networking,Hyderabad,pwd,No,8.3,F,25
+S380,David,B.Com,Stats;C++;SQL,Mumbai,Rural,Yes,7.5,M,22
+S381,Morgan,B.Tech,React;Python;Java,Hyderabad,pwd,No,9.5,F,22
+S382,Jacob,B.Sc,C++;Excel;Cloud,Delhi,SC,No,7.9,F,21
+S383,Tonya,B.Tech,React;Finance;Networking,Hyderabad,pwd,Yes,7.7,M,23
+S384,Cameron,BCA,Data Analysis;AI;Cloud,Hyderabad,OBC,No,7.1,M,24
+S385,David,BCA,Networking;AI;C++,Mumbai,Rural,No,8.2,F,24
+S386,Joseph,BCA,C++;SQL;Data Analysis,Hyderabad,General,No,8.6,F,21
+S387,Briana,B.Tech,Finance;Marketing;Networking,Bangalore,General,No,9.4,M,22
+S388,Jessica,BCA,Cybersecurity;React;ML,Bangalore,OBC,Yes,7.2,F,22
+S389,Chad,B.Com,Excel;SQL;Finance,Delhi,pwd,No,8.5,M,23
+S390,Kylie,B.Com,Java;Finance;ML,Delhi,pwd,No,7.2,M,21
+S391,Marcus,B.Sc,AI;C++;React,Hyderabad,Rural,Yes,8.4,F,24
+S392,Danielle,B.Com,Cloud;Cybersecurity;Python,Bangalore,General,No,6.7,M,21
+S393,Travis,BCA,Finance;Cybersecurity;ML,Hyderabad,SC,No,9.3,F,25
+S394,Tanya,B.Tech,AI;Marketing;Cloud,Hyderabad,General,No,9.4,F,23
+S395,Timothy,BCA,ML;Stats;Finance,Hyderabad,General,Yes,8.7,M,25
+S396,April,BCA,Python;React;Excel,Bangalore,ST,Yes,9.3,M,23
+S397,Dana,BCA,Excel;Finance;Cybersecurity,Delhi,SC,Yes,6.7,F,22
+S398,Joseph,BCA,C++;Java;Marketing,Hyderabad,pwd,Yes,6.7,F,25
+S399,Jennifer,B.Sc,Data Analysis;React;ML,Delhi,ST,Yes,8.3,M,21
+S400,Mary,BCA,C++;Java;Cybersecurity,Hyderabad,SC,Yes,9.4,M,21
+S401,Alicia,B.Sc,Excel;Cybersecurity;React,Mumbai,ST,Yes,6.7,M,21
+S402,Daniel,B.Com,Excel;C++;Finance,Bangalore,pwd,No,8.3,F,24
+S403,Shannon,B.Com,AI;Stats;Java,Hyderabad,Rural,No,6.9,F,24
+S404,Kyle,B.Com,Finance;Data Analysis;React,Delhi,ST,Yes,9.3,M,22
+S405,Gabrielle,BCA,Java;Cloud;SQL,Hyderabad,pwd,Yes,8.7,F,23
+S406,Teresa,BCA,Stats;Java;SQL,Mumbai,ST,No,8.6,F,21
+S407,Debra,B.Sc,AI;C++;Stats,Delhi,General,No,6.8,F,24
+S408,James,B.Sc,C++;Cloud;React,Mumbai,OBC,Yes,7.5,F,22
+S409,Michael,B.Tech,Finance;Data Analysis;Java,Delhi,SC,No,8.1,F,23
+S410,Hannah,BCA,Networking;Marketing;Cybersecurity,Delhi,General,No,8.5,F,25
+S411,Janice,B.Com,Finance;SQL;Data Analysis,Mumbai,SC,Yes,8.2,M,23
+S412,Anthony,B.Tech,Stats;Excel;ML,Delhi,ST,No,7.0,M,23
+S413,Julie,B.Tech,AI;Java;C++,Bangalore,General,Yes,7.1,F,21
+S414,Nicole,BCA,Stats;Data Analysis;ML,Hyderabad,pwd,No,9.5,M,22
+S415,Amanda,B.Sc,ML;React;Cybersecurity,Bangalore,ST,Yes,7.6,F,25
+S416,Amy,BCA,Python;Cloud;Marketing,Delhi,OBC,Yes,7.6,M,21
+S417,Brenda,BCA,C++;Marketing;Finance,Delhi,General,No,7.3,M,24
+S418,Danny,BCA,Stats;Marketing;Java,Bangalore,SC,No,7.4,M,23
+S419,Crystal,B.Com,AI;Cybersecurity;Finance,Bangalore,SC,No,8.0,M,23
+S420,Larry,B.Tech,React;Java;Marketing,Mumbai,SC,No,7.0,F,21
+S421,Jennifer,BCA,React;Stats;Networking,Delhi,ST,Yes,7.4,F,25
+S422,Ashley,B.Tech,SQL;Finance;Excel,Delhi,ST,No,8.3,M,22
+S423,Troy,BCA,Stats;AI;Java,Mumbai,OBC,No,8.3,F,21
+S424,Peter,B.Tech,Data Analysis;Excel;Cybersecurity,Hyderabad,OBC,Yes,7.5,F,24
+S425,Patricia,B.Com,Python;Marketing;AI,Hyderabad,General,No,6.9,M,22
+S426,Emily,BCA,C++;ML;Networking,Delhi,ST,No,8.5,F,24
+S427,Kimberly,B.Sc,ML;Java;Marketing,Bangalore,pwd,Yes,7.5,M,22
+S428,Valerie,B.Tech,ML;Python;Finance,Delhi,Rural,No,8.0,F,25
+S429,Karen,B.Com,Stats;Cybersecurity;Excel,Hyderabad,OBC,No,8.3,F,24
+S430,Kathleen,BCA,C++;Cloud;Stats,Mumbai,Rural,No,6.8,M,25
+S431,Robert,B.Tech,Networking;C++;AI,Bangalore,SC,No,7.0,F,23
+S432,Shannon,B.Com,React;Networking;Marketing,Mumbai,Rural,Yes,7.0,F,23
+S433,Vini,B.Tech,Data Analysis;Python;C++,Hyderabad,ST,No,6.5,F,21
+S434,Rachael,B.Sc,AI;ML;SQL,Mumbai,SC,Yes,9.3,F,25
+S435,Larry,BCA,Finance;React;AI,Mumbai,General,Yes,8.6,F,22
+S436,Daniel,BCA,Networking;Cybersecurity;SQL,Hyderabad,pwd,No,7.4,M,25
+S437,Lauren,BCA,React;AI;C++,Hyderabad,SC,Yes,8.0,F,22
+S438,Alejandra,B.Tech,Excel;C++;Data Analysis,Mumbai,OBC,No,6.6,M,23
+S439,Rodney,BCA,React;AI;Data Analysis,Mumbai,SC,No,8.2,M,24
+S440,Timothy,BCA,Data Analysis;Cybersecurity;ML,Delhi,pwd,No,9.3,F,25
+S441,Mary,B.Com,Networking;Data Analysis;Finance,Delhi,General,No,7.0,M,23
+S442,John,B.Com,Marketing;React;Networking,Delhi,pwd,No,6.7,F,25
+S443,Joshua,B.Sc,Cybersecurity;Marketing;Cloud,Mumbai,SC,Yes,7.2,F,25
+S444,Stephanie,BCA,Cloud;Data Analysis;Excel,Delhi,SC,No,8.4,F,21
+S445,Derek,B.Com,Cybersecurity;Excel;Java,Mumbai,SC;Rural,Yes,8.0,M,24
+S446,Eric,BCA,Excel;Java;Stats,Hyderabad,Rural,No,8.1,M,23
+S447,Mary,BCA,Cloud;Networking;Python,Mumbai,ST,No,9.2,F,23
+S448,Elizabeth,B.Sc,C++;Cybersecurity;Python,Hyderabad,Rural,Yes,7.4,F,22
+S449,Savannah,B.Tech,Data Analysis;Finance;SQL,Hyderabad,SC,Yes,7.8,M,23
+S450,Steven,B.Com,SQL;Cloud;Python,Hyderabad,SC,Yes,9.1,F,21
+S451,Adriana,B.Tech,Java;Python;Finance,Mumbai,ST,Yes,8.4,M,22
+S452,Marie,B.Tech,Finance;C++;Networking,Hyderabad,pwd,No,8.4,F,22
+S453,Sean,BCA,ML;C++;Networking,Mumbai,ST,No,6.5,M,25
+S454,Christopher,B.Sc,Excel;Java;React,Hyderabad,OBC,No,9.2,M,22
+S455,Marc,B.Tech,ML;Stats;C++,Mumbai,ST,No,7.8,F,23
+S456,Alexa,B.Sc,Networking;C++;Marketing,Delhi,Rural,Yes,7.9,M,21
+S457,Joseph,BCA,Excel;Finance;SQL,Mumbai,SC,Yes,6.6,F,23
+S458,Joseph,B.Tech,Cloud;SQL;Stats,Hyderabad,Rural,No,9.0,M,24
+S459,Tracey,BCA,C++;Networking;AI,Mumbai,SC,Yes,8.0,F,25
+S460,James,BCA,React;Python;ML,Hyderabad,OBC,Yes,6.5,F,24
+S461,Teresa,B.Tech,SQL;Java;Excel,Hyderabad,pwd,No,7.2,F,24
+S462,Lisa,B.Sc,SQL;Cloud;C++,Mumbai,Rural,No,8.9,M,23
+S463,David,B.Tech,Finance;C++;SQL,Hyderabad,Rural,No,7.8,M,25
+S464,Renee,B.Sc,Java;React;Networking,Bangalore,OBC,Yes,6.9,F,24
+S465,Heather,BCA,Cybersecurity;Marketing;AI,Mumbai,SC,No,8.8,F,21
+S466,Eric,B.Com,Networking;Excel;Data Analysis,Delhi,ST,Yes,7.2,F,23
+S467,Adam,B.Tech,Cloud;Networking;AI,Hyderabad,OBC,No,6.9,F,24
+S468,Erica,BCA,Java;React;Data Analysis,Bangalore,Rural,No,8.3,M,21
+S469,Debra,B.Tech,Marketing;Networking;ML,Mumbai,Rural,No,6.6,M,24
+S470,Jeffrey,B.Com,Cybersecurity;Finance;ML,Mumbai,OBC,No,9.2,M,23
+S471,Brittany,B.Com,Finance;Networking;Marketing,Hyderabad,SC,Yes,6.6,F,25
+S472,Lisa,B.Tech,Excel;Networking;Python,Mumbai,OBC,Yes,8.9,F,23
+S473,Charles,B.Sc,Data Analysis;Java;Marketing,Delhi,OBC,No,8.6,M,25
+S474,Jeffery,B.Tech,Data Analysis;Finance;Excel,Mumbai,pwd,Yes,7.6,M,25
+S475,James,B.Com,Cloud;C++;Python,Delhi,SC,No,7.4,M,24
+S476,Crystal,BCA,Cloud;Cybersecurity;Java,Mumbai,Rural,No,9.3,F,24
+S477,Jonathan,B.Com,ML;Cybersecurity;SQL,Mumbai,Rural,No,7.9,F,21
+S478,Heidi,BCA,Cybersecurity;Python;C++,Delhi,General,No,8.0,F,25
+S479,Jack,B.Com,React;Cybersecurity;Marketing,Hyderabad,SC,Yes,8.1,F,21
+S480,Julie,B.Tech,Java;Stats;Marketing,Mumbai,Rural,Yes,9.4,F,22
+S481,David,BCA,Excel;AI;Stats,Delhi,Rural,Yes,7.8,F,22
+S482,Michael,B.Sc,React;Cloud;ML,Mumbai,ST,No,6.9,M,22
+S483,Tammy,B.Sc,AI;Marketing;Stats,Delhi,OBC,Yes,7.1,M,21
+S484,Jerry,B.Sc,React;Data Analysis;ML,Bangalore,Rural,No,7.6,F,24
+S485,Chrissy,B.Com,Cybersecurity;SQL;Excel,Mumbai,ST,No,9.2,F,21
+S486,Nathan,BCA,Java;Finance;Cybersecurity,Mumbai,SC,Yes,9.5,M,22
+S487,Heather,B.Com,AI;SQL;React,Mumbai,Rural,Yes,8.2,F,23
+S488,Stephen,B.Tech,Marketing;Data Analysis;C++,Mumbai,ST,No,7.6,F,25
+S489,Kristen,B.Sc,Marketing;Stats;ML,Mumbai,OBC,Yes,7.6,F,22
+S490,Michael,BCA,SQL;Marketing;Java,Bangalore,Rural,Yes,6.7,F,21
+S491,Sharon,B.Sc,Python;SQL;Data Analysis,Chennai,pwd,Yes,7.9,F,23
+S492,Ronald,B.Sc,Stats;Cybersecurity;Python,Hyderabad,SC,No,8.2,F,22
+S493,Destiny,B.Tech,C++;Cloud;Networking,Delhi,pwd,Yes,8.9,F,22
+S494,Mary,B.Com,Marketing;Data Analysis;Excel,Mumbai,Rural,No,8.0,F,21
+S495,Jared,B.Sc,Data Analysis;Stats;Finance,Bangalore,General,Yes,9.2,M,21
+S496,Alicia,B.Tech,ML;Networking;Cloud,Hyderabad,General,No,6.7,F,22
+S497,Michelle,B.Sc,Python;Cloud;SQL,Delhi,OBC,No,7.2,M,23
+S498,Christina,BCA,Networking;Finance;React,Hyderabad,pwd,Yes,7.0,F,22
+S499,Christine,B.Sc,AI;Finance;Excel,Mumbai,SC,No,7.4,F,23
+S500,Tammy,B.Sc,Python;Data Analysis;Stats,Mumbai,SC,No,8.5,F,21
+S501,Kia,B.Sc,Python;Data Analysis;ML,Chennai,SC,No,9.1,F,23
+S502,Jayesh,B.Sc,Python;Data Analysis;ML,Chennai,SC,No,9.2,M,23
+S503,Krish,B.Sc,Python;Data Analysis;ML,Chennai,ST,No,7.1,M,23
+S504,Krishna,B.Sc,Python;Data Analysis;ML,Chennai,ST,Yes,8.1,M,23
+S505,Kamal,B.Sc,Python;Data Analysis;ML,Chennai,ST,No,6.2,M,24
+S506,Kanchan,B.Sc,Python;Data Analysis;ML,Chennai,ST,No,7.6,F,23
+S507,Samar,B.Sc,Python;Data Analysis;ML,Chennai,OBC,Yes,7.1,M,23
+S508,Sagar,B.Sc,Python;Data Analysis;ML,Chennai,OBC,No,9.1,M,21
+S509,Sara,B.Sc,Python;Data Analysis;ML,Chennai,OBC,No,9.7,F,21
+S510,Pranjal,B.Sc,Python;Data Analysis;ML,Chennai,OBC,Yes,9.9,F,23
+S511,Pranali,B.Sc,Python;Data Analysis;ML,Chennai,OBC,No,5.9,F,23
+S512,Priyal,B.Sc,Python;Data Analysis;ML,Chennai,OBC,No,8.8,F,22
+S513,Raha,B.Sc,Python;Data Analysis;ML,Chennai,OBC,No,8.9,F,24
+S514,Ved,B.Sc,Python;Data Analysis;ML,Chennai,pwd,No,9.9,M,23
+S515,Kajol,B.Sc,Python;Data Analysis;ML,Chennai,pwd,No,8.5,F,21
+S516,Prakash,B.Sc,Python;Data Analysis;ML,Chennai,pwd,Yes,7.8,M,24
+S517,Karanvir,B.Sc,Python;Data Analysis;ML,Chennai,pwd,No,7.9,M,21
+S518,Veer,B.Sc,Python;Data Analysis;ML,Chennai,General,No,9.2,M,22
+S519,Karanveer,B.Sc,Python;Data Analysis;ML,Chennai,General,Yes,9.1,M,24
+S520,Soham,B.Sc,Python;Data Analysis;ML,Chennai,General,No,8.9,M,23
+S521,Sonam,B.Sc,Python;Data Analysis;ML,Chennai,General,No,7.9,F,23
+S522,Sakshi,B.Sc,Python;Data Analysis;ML,Chennai,General,No,5.9,F,24
+S523,Anirudh,B.Sc,Python;Data Analysis;ML,Chennai,General,Yes,9.3,M,23
+S524,Jash,B.Sc,Python;Data Analysis;ML,Chennai,General,No,8.4,M,22
+S525,Yash,B.Sc,Python;Data Analysis;ML,Chennai,General,No,8.7,M,22
+S526,Yashi,B.Sc,Python;Data Analysis;ML,Chennai,General,Yes,8.1,F,24
+S527,Punam,B.Sc,Python;Data Analysis;ML,Chennai,General,No,6.9,F,23
+S528,Shabnam,B.Sc,Python;Data Analysis;ML,Chennai,General,Yes,9.7,F,22
+S529,Yug,B.Sc,Python;Data Analysis;ML,Chennai,General,No,8.8,M,23
+S530,Vansh,B.Sc,Python;Data Analysis;ML,Chennai,General,Yes,9.1,M,24

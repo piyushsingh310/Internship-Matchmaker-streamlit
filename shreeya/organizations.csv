@@ -1,0 +1,6 @@
+org_id,org_name,sector,required_skills,location,category_pref,no_of_openings,degree,female_openings
+O001,TechNova,IT,Python;ML;AI,Delhi,General,3,B.Tech,1
+O002,FinCorp,Finance,Finance;Excel;Stats,Mumbai,General;Rural,11,B.Com,2
+O003,HealthPlus,Healthcare,Data Analysis;Python;Stats,Bangalore,General;SC,4,B.Sc,1
+O004,CloudWorks,IT,Cloud;Networking;AI,Hyderabad,General,3,B.Tech,1
+O005,GreenFuture,Energy,Python;Data Analysis;ML,Chennai,General;OBC;SC;ST;pwd,30,B.Sc,1

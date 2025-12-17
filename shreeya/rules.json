@@ -1,0 +1,107 @@
+{
+    "TechNova": {
+      "degree_required": "B.Tech",
+      "compulsory_skills": ["Python"],
+      "optional_skills": ["AI", "ML"],
+      "min_gpa": null,
+      "age_range": [21, 24],
+      "location": "Delhi",
+      "weights": {
+        "degree": 5,
+        "skills": 1,
+        "location": 2,
+        "gpa": 2,
+        "past_participation": -1
+      },
+      "special_lists":{
+        "general":{},
+        "female":{}
+      }
+    },
+    "FinCorp": {
+      "degree_required": "B.Com",
+      "compulsory_skills": [],
+      "optional_skills": ["Finance", "Excel", "Stats"],
+      "min_gpa": null,
+      "age_range": [21, 24],
+      "location": "Mumbai",
+      "weights": {
+        "degree": 5,
+        "skills": 1,
+        "location": 2,
+        "gpa": 2,
+        "past_participation": -1
+      },
+      "special_lists":{
+        "category_openings":{
+            "Rural":2
+        }
+      }
+    },
+    "HealthPlus": {
+      "degree_required": "B.Sc",
+      "compulsory_skills": [],
+      "optional_skills": ["Data Analysis", "Python", "Stats"],
+      "min_gpa": 5.0,
+      "age_range": [21, 24],
+      "location": null,
+      "weights": {
+        "degree": 5,
+        "skills": 1,
+        "location": 1,
+        "gpa": 2,
+        "past_participation": -1
+      },
+      "special_lists": {
+        "category_openings": {
+        "SC": 2
+            }   
+        }
+    },
+
+    "CloudWorks": {
+        "degree_required": "B.Tech",
+        "compulsory_skills": ["Cloud"],
+        "optional_skills": ["AI", "Networking"],
+        "min_gpa": null,
+        "age_range": [21, 24],
+        "location": "Hyderabad",
+        "weights": {
+          "degree": 5,
+          "skills": 1,
+          "location": 2,
+          "gpa": 2,
+          "past_participation": -1
+        },
+        "special_lists":{
+          "general":{},
+          "female":{}
+        }
+    },
+
+    "GreenFuture": {
+        "degree_required": "B.Sc",
+        "compulsory_skills": [],
+        "optional_skills": ["Python", "Data Analysis", "ML"],
+        "min_gpa": null,
+        "age_range": [21, 24],
+        "location": "Chennai",
+        "weights": {
+            "degree": 5,
+            "skills": 1,
+            "location": 2,
+            "gpa": 2,
+            "past_participation": -1
+        },
+        "special_lists": {
+            "category_openings": {
+            "SC": 2,
+            "ST": 2,
+            "OBC": 5,
+            "PWD": 3
+            }
+        }
+    }
+
+  }
+  

@@ -1,0 +1,7 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age,score,status
+S005,Neha,B.Com,Finance;Excel;Marketing,Mumbai,Rural,No,7.8,F,22,24.6,Allocated - RURAL
+S494,Mary,B.Com,Marketing;Data Analysis;Excel,Mumbai,Rural,No,8.0,F,21,24.0,Allocated - RURAL
+S477,Jonathan,B.Com,ML;Cybersecurity;SQL,Mumbai,Rural,No,7.9,F,21,22.8,Allocated - RURAL
+S487,Heather,B.Com,AI;SQL;React,Mumbai,Rural,Yes,8.2,F,23,22.4,Allocated - RURAL
+S380,David,B.Com,Stats;C++;SQL,Mumbai,Rural,Yes,7.5,M,22,22.0,Allocated - RURAL
+S352,Nathan,B.Com,React;Excel;Cybersecurity,Mumbai,Rural,Yes,6.9,M,21,20.8,Allocated - RURAL

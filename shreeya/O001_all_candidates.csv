@@ -1,0 +1,10 @@
+student_id,name,degree,skills,location_pref,category,past_participation,gpa,gender,age,score,status
+S142,Brandon,B.Tech,Networking;C++;Python,Delhi,SC,No,9.8,M,23,26.6,Allocated - General
+S036,Avni,B.Tech,Python;SQL;ML,Delhi,OBC,No,8.9,F,22,25.8,Allocated - Female
+S007,Simran,B.Tech,Python;C++;React,Delhi,OBC,No,8.7,F,24,24.4,Allocated - Female
+S001,Aditi,B.Tech,Python;SQL;ML,Delhi,Rural,No,8.2,F,22,24.4,Allocated - Female
+S118,Kimberly,B.Tech,Finance;Stats;Python,Delhi,OBC,Yes,9.0,M,21,24.0,Allocated - General
+S127,Diana,B.Tech,Python;AI;SQL,Delhi,pwd,No,8.0,F,22,24.0,Allocated - General
+S022,Akash,B.Tech,Python;C++;SQL,Delhi,General,No,8.4,M,23,23.8,Allocated - General
+S016,Kabir,B.Tech,Python;SQL;C++,Delhi,OBC,Yes,8.8,M,24,23.6,Allocated - General
+S345,Tom,B.Tech,SQL;Excel;Python,Delhi,pwd,No,7.3,M,22,21.6,Allocated - General
